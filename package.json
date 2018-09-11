@@ -1,0 +1,27 @@
+{
+  "name": "poop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeiaccio/poop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexeiaccio/poop/issues"
+  },
+  "homepage": "https://github.com/alexeiaccio/poop#readme"
+}
