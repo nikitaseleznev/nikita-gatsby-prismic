@@ -65,15 +65,19 @@ export const pageQuery = graphql`
               }
             }
           }
-          ... on PrismicProjectBodyVideo {
+          
+        }
+      }
+    }
+  }
+`
+
+/* 
+... on PrismicProjectBodyVideo {
             primary {
               link {
                 html
               }
             }
           }
-        }
-      }
-    }
-  }
-`
+*/
