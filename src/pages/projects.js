@@ -15,7 +15,7 @@ export default ({data}) => (
 
 export const pageQuery = graphql`
   query ProjectsQuery {
-    projects: allPrismicProject {
+    projects: allPrismicProject(sort: { fields: [data___sortdate]}) {
       edges {
         node {
           uid
