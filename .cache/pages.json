@@ -5,13 +5,28 @@
         "path": "/"
     },
     {
+        "componentChunkName": "component---src-pages-about-js",
+        "jsonName": "about-f34",
+        "path": "/about/"
+    },
+    {
         "componentChunkName": "component---cache-dev-404-page-js",
         "jsonName": "dev-404-page-5f9",
         "path": "/dev-404-page/"
     },
     {
-        "componentChunkName": "component---src-pages-page-2-js",
-        "jsonName": "page-2-fbc",
-        "path": "/page-2/"
+        "componentChunkName": "component---src-templates-project-js",
+        "jsonName": "my-little-protest-c11",
+        "path": "/my-little-protest"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-js",
+        "jsonName": "my-space-660",
+        "path": "/my-space"
+    },
+    {
+        "componentChunkName": "component---src-pages-projects-js",
+        "jsonName": "projects-9e9",
+        "path": "/projects/"
     }
 ]

@@ -4,13 +4,11 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
 const IndexPage = () => (
- <Layout>
-   <h1>Hi people</h1>
-   <p>Welcome to your new Gatsby site.</p>
-   <p>Now go build something great.</p>
-   <Link to="/page-2/">Go to page 2</Link>
- </Layout>
+  <Layout>
+    <h1>NIKITA SELEZNEV</h1>
+    <p><Link to="/projects/">PROJECTS</Link></p>
+    <p><Link to="/about/">ABOUT+CONTACT</Link></p>
+  </Layout>
 )
 
 export default IndexPage
-

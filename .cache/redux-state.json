@@ -196,15 +196,107 @@
         "owner": "internal-data-bridge"
       }
     },
+    "Plugin gatsby-source-prismic": {
+      "resolve": "C:/git/poop/node_modules/gatsby-source-prismic",
+      "id": "Plugin gatsby-source-prismic",
+      "name": "gatsby-source-prismic",
+      "version": "1.2.0",
+      "pluginOptions": {
+        "plugins": [],
+        "repositoryName": "nikita-seleznev",
+        "accessToken": "MC5XNWtQQXlrQUFDa0FGR2ky.fu-_vTVwGe-_vS7vv71n77-9Smnvv70b77-9VildFHFl77-977-977-9OFXvv71k77-9Pu-_vTg"
+      },
+      "nodeAPIs": [
+        "sourceNodes"
+      ],
+      "browserAPIs": [],
+      "ssrAPIs": [],
+      "pluginFilepath": "C:/git/poop/node_modules/gatsby-source-prismic",
+      "packageJson": {
+        "name": "gatsby-source-prismic",
+        "description": "Gatsby source plugin for building websites using prismic.io as a data source",
+        "version": "1.2.0",
+        "keywords": [
+          "gatsby",
+          "gatsby-plugin",
+          "gatsby-source-plugin"
+        ],
+        "author": {
+          "name": "Angelo Ashmore",
+          "email": "angelo.ashmore@walltowall.com"
+        },
+        "license": "MIT",
+        "dependencies": [
+          {
+            "name": "asyncro",
+            "version": "^3.0.0"
+          },
+          {
+            "name": "gatsby-node-helpers",
+            "version": "^0.3.0"
+          },
+          {
+            "name": "gatsby-source-filesystem",
+            "version": "^1.5.35"
+          },
+          {
+            "name": "prismic-dom",
+            "version": "^2.1.0"
+          },
+          {
+            "name": "prismic-javascript",
+            "version": "^1.1.5"
+          }
+        ],
+        "devDependencies": [
+          {
+            "name": "babel-cli",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-async-to-generator",
+            "version": "^6.24.1"
+          },
+          {
+            "name": "babel-plugin-transform-object-rest-spread",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-plugin-transform-runtime",
+            "version": "^6.23.0"
+          },
+          {
+            "name": "babel-preset-env",
+            "version": "^1.6.0"
+          },
+          {
+            "name": "prettier",
+            "version": "^1.5.3"
+          }
+        ],
+        "peerDependencies": [],
+        "optionalDependecies": [],
+        "bundledDependecies": []
+      },
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "contentDigest": "589dc22fd7956af6b93d55b375e9df9d",
+        "type": "SitePlugin",
+        "owner": "internal-data-bridge"
+      }
+    },
     "Plugin default-site-plugin": {
       "resolve": "C:/git/poop",
       "id": "Plugin default-site-plugin",
       "name": "default-site-plugin",
-      "version": "26abfc82b3a79f63f3f4c1b3bcebe285",
+      "version": "066af5112582d2fea6ee7b410193a3da",
       "pluginOptions": {
         "plugins": []
       },
-      "nodeAPIs": [],
+      "nodeAPIs": [
+        "createPages"
+      ],
       "browserAPIs": [],
       "ssrAPIs": [],
       "pluginFilepath": "C:/git/poop",
@@ -223,6 +315,10 @@
           {
             "name": "gatsby-plugin-react-helmet",
             "version": "next"
+          },
+          {
+            "name": "gatsby-source-prismic",
+            "version": "^1.2.0"
           },
           {
             "name": "react",
@@ -245,7 +341,7 @@
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "b751f10b5f530dc29f5a926c60990940",
+        "contentDigest": "f40af3ba20bc43e1b5823e72f587c5cc",
         "type": "SitePlugin",
         "owner": "internal-data-bridge"
       }
@@ -353,13 +449,640 @@
       "host": "localhost",
       "pathPrefix": "",
       "polyfill": true,
-      "buildTime": "2018-09-11T15:53:29.260Z",
+      "buildTime": "2018-09-12T15:14:36.543Z",
       "id": "Site",
       "parent": "SOURCE",
       "children": [],
       "internal": {
-        "contentDigest": "ad2d1b92a5c92cd9d8e5774b1935dd37",
+        "contentDigest": "8f59b7bdb5ce72cc3539a105a28a3ca4",
         "type": "Site",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "C:/git/poop/.cache/gatsby-source-filesystem/46a8505c1487845c3b3b734f4d693e2d.jpg absPath of file": {
+      "id": "C:/git/poop/.cache/gatsby-source-filesystem/46a8505c1487845c3b3b734f4d693e2d.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "726861ef3091dd489752d2394ecccc6b",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/fa4a20c94c076cece0bb2f0425d8b1ef7945bf2d_o_ld5czkfqy.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "C:/git/poop/.cache/gatsby-source-filesystem/46a8505c1487845c3b3b734f4d693e2d.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/46a8505c1487845c3b3b734f4d693e2d.jpg",
+      "extension": "jpg",
+      "size": 175722,
+      "prettySize": "176 kB",
+      "modifiedTime": "2018-09-12T14:04:44.756Z",
+      "accessTime": "2018-09-12T14:04:44.424Z",
+      "changeTime": "2018-09-12T14:04:44.758Z",
+      "birthTime": "2018-09-12T14:04:44.424Z",
+      "root": "C:/",
+      "dir": "C:/git/poop/.cache/gatsby-source-filesystem",
+      "base": "46a8505c1487845c3b3b734f4d693e2d.jpg",
+      "ext": ".jpg",
+      "name": "46a8505c1487845c3b3b734f4d693e2d",
+      "relativeDirectory": ".cache\\gatsby-source-filesystem",
+      "dev": 3036118514,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 562949953698379,
+      "atimeMs": 1536761084423.615,
+      "mtimeMs": 1536761084756.463,
+      "ctimeMs": 1536761084758.469,
+      "birthtimeMs": 1536761084423.615,
+      "atime": "2018-09-12T14:04:44.424Z",
+      "mtime": "2018-09-12T14:04:44.756Z",
+      "ctime": "2018-09-12T14:04:44.758Z",
+      "birthtime": "2018-09-12T14:04:44.424Z"
+    },
+    "C:/git/poop/.cache/gatsby-source-filesystem/288bec4e26a26d71f3cde33ef33234f4.jpg absPath of file": {
+      "id": "C:/git/poop/.cache/gatsby-source-filesystem/288bec4e26a26d71f3cde33ef33234f4.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "7f542ccc02760b7acad5b223cb7d7160",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/2d1a8c38ad815db6d0887928dddb50e063618615_dsc_6287-dsc_6289.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "C:/git/poop/.cache/gatsby-source-filesystem/288bec4e26a26d71f3cde33ef33234f4.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/288bec4e26a26d71f3cde33ef33234f4.jpg",
+      "extension": "jpg",
+      "size": 1946837,
+      "prettySize": "1.95 MB",
+      "modifiedTime": "2018-09-12T14:04:46.269Z",
+      "accessTime": "2018-09-12T14:04:44.420Z",
+      "changeTime": "2018-09-12T14:04:46.281Z",
+      "birthTime": "2018-09-12T14:04:44.420Z",
+      "root": "C:/",
+      "dir": "C:/git/poop/.cache/gatsby-source-filesystem",
+      "base": "288bec4e26a26d71f3cde33ef33234f4.jpg",
+      "ext": ".jpg",
+      "name": "288bec4e26a26d71f3cde33ef33234f4",
+      "relativeDirectory": ".cache\\gatsby-source-filesystem",
+      "dev": 3036118514,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 1407374883830159,
+      "atimeMs": 1536761084419.6033,
+      "mtimeMs": 1536761086269.288,
+      "ctimeMs": 1536761086281.3035,
+      "birthtimeMs": 1536761084419.6033,
+      "atime": "2018-09-12T14:04:44.420Z",
+      "mtime": "2018-09-12T14:04:46.269Z",
+      "ctime": "2018-09-12T14:04:46.281Z",
+      "birthtime": "2018-09-12T14:04:44.420Z"
+    },
+    "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kVyCkAACkAFIeb__body__0": {
+      "slice_type": "image_gallery",
+      "slice_label": null,
+      "items": [
+        {
+          "alt": null,
+          "image": {
+            "dimensions": {
+              "width": 3000,
+              "height": 2003
+            },
+            "alt": "",
+            "copyright": "",
+            "url": "https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/2d1a8c38ad815db6d0887928dddb50e063618615_dsc_6287-dsc_6289.jpg",
+            "localFile___NODE": "C:/git/poop/.cache/gatsby-source-filesystem/288bec4e26a26d71f3cde33ef33234f4.jpg absPath of file"
+          }
+        },
+        {
+          "alt": null,
+          "image": {
+            "dimensions": {
+              "width": 1280,
+              "height": 960
+            },
+            "alt": "",
+            "copyright": "",
+            "url": "https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/fa4a20c94c076cece0bb2f0425d8b1ef7945bf2d_o_ld5czkfqy.jpg",
+            "localFile___NODE": "C:/git/poop/.cache/gatsby-source-filesystem/46a8505c1487845c3b3b734f4d693e2d.jpg absPath of file"
+          }
+        }
+      ],
+      "primary": {},
+      "prismicId": "Prismic__Project__W5kVyCkAACkAFIeb__body__0",
+      "id": "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kVyCkAACkAFIeb__body__0",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyImageGallery",
+        "contentDigest": "69fd4c335cdc0e89e89b4b007038e4a9",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__1": {
+      "slice_type": "text",
+      "slice_label": null,
+      "items": [
+        {}
+      ],
+      "primary": {
+        "text": {
+          "html": "<p>My little protest</p><p>Project “My little protest” by Nikita Seleznev is located in public space of one of the Quartariata residence  buildings in Peterhof. It was created during artist&#39;s residence in Qurtariata.</p><p>Main part of the project is the series of small gilded figurines, located in the most unexpected places what depicts three images of russian actionism: “ E.T.I.- TEXT” 1991, dog-man Oleg Kulik and “Fixing” Petr Pavlensky.  </p><p>Fetishization of the stranger&#39;s heroism- it is the ironic gesture of the artist. These objects placed in the interior of the fashionable creative space demonstrate the ability of capitalism to absorb any art and turn it into commodity.  The final commodification has been done. That was a heroic provocation what the gilded figurines imply. This means the provocation in other sphere that undermines the norms developed in the system of contemporary art.</p><p></p>",
+          "text": "My little protest Project “My little protest” by Nikita Seleznev is located in public space of one of the Quartariata residence  buildings in Peterhof. It was created during artist's residence in Qurtariata. Main part of the project is the series of small gilded figurines, located in the most unexpected places what depicts three images of russian actionism: “ E.T.I.- TEXT” 1991, dog-man Oleg Kulik and “Fixing” Petr Pavlensky.   Fetishization of the stranger's heroism- it is the ironic gesture of the artist. These objects placed in the interior of the fashionable creative space demonstrate the ability of capitalism to absorb any art and turn it into commodity.  The final commodification has been done. That was a heroic provocation what the gilded figurines imply. This means the provocation in other sphere that undermines the norms developed in the system of contemporary art. ",
+          "raw": [
+            {
+              "type": "paragraph",
+              "text": "My little protest",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Project “My little protest” by Nikita Seleznev is located in public space of one of the Quartariata residence  buildings in Peterhof. It was created during artist's residence in Qurtariata.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Main part of the project is the series of small gilded figurines, located in the most unexpected places what depicts three images of russian actionism: “ E.T.I.- TEXT” 1991, dog-man Oleg Kulik and “Fixing” Petr Pavlensky.  ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Fetishization of the stranger's heroism- it is the ironic gesture of the artist. These objects placed in the interior of the fashionable creative space demonstrate the ability of capitalism to absorb any art and turn it into commodity.  The final commodification has been done. That was a heroic provocation what the gilded figurines imply. This means the provocation in other sphere that undermines the norms developed in the system of contemporary art.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "",
+              "spans": []
+            }
+          ]
+        }
+      },
+      "prismicId": "Prismic__Project__W5kVyCkAACkAFIeb__body__1",
+      "id": "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__1",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyText",
+        "contentDigest": "18112f90f805f676f5311934d4de7784",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__2": {
+      "slice_type": "text",
+      "slice_label": null,
+      "items": [
+        {}
+      ],
+      "primary": {
+        "text": {
+          "html": "<p>Мой маленький протест</p><p>Проект  «Мой маленький протест» Никиты Селезнева находится в общественном пространстве одного из зданий резиденции «Квартариата» в Петергофе. Он был создан во время пребывания художника в резиденции. </p><p>В основе проекта серия небольших позолоченных фигурок, расположенных в самых неожиданных местах и представляющих три знаменитых образа русского акционизма: «Э. Т. И. — ТЕКСТ» 1991 года, человека-собаку Олега Кулика и «Фиксацию» Петра Павленского. </p><p>Фетишизация чужого героизма — этот иронический жест художника, помещённый в интерьер модного креативного пространства, который демонстрирует способность капитализма поглощать любое искусство, превращая его в товар. Окончательная коммодификация произошла: то, что было когда-то героической провокацией, стало изящной золочёной скульптуркой, осуществляя тем самым провокацию уже в другом поле — подрывая авторитеты, сложившиеся в системе актуального искусства.</p>",
+          "text": "Мой маленький протест Проект  «Мой маленький протест» Никиты Селезнева находится в общественном пространстве одного из зданий резиденции «Квартариата» в Петергофе. Он был создан во время пребывания художника в резиденции.  В основе проекта серия небольших позолоченных фигурок, расположенных в самых неожиданных местах и представляющих три знаменитых образа русского акционизма: «Э. Т. И. — ТЕКСТ» 1991 года, человека-собаку Олега Кулика и «Фиксацию» Петра Павленского.  Фетишизация чужого героизма — этот иронический жест художника, помещённый в интерьер модного креативного пространства, который демонстрирует способность капитализма поглощать любое искусство, превращая его в товар. Окончательная коммодификация произошла: то, что было когда-то героической провокацией, стало изящной золочёной скульптуркой, осуществляя тем самым провокацию уже в другом поле — подрывая авторитеты, сложившиеся в системе актуального искусства.",
+          "raw": [
+            {
+              "type": "paragraph",
+              "text": "Мой маленький протест",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Проект  «Мой маленький протест» Никиты Селезнева находится в общественном пространстве одного из зданий резиденции «Квартариата» в Петергофе. Он был создан во время пребывания художника в резиденции. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "В основе проекта серия небольших позолоченных фигурок, расположенных в самых неожиданных местах и представляющих три знаменитых образа русского акционизма: «Э. Т. И. — ТЕКСТ» 1991 года, человека-собаку Олега Кулика и «Фиксацию» Петра Павленского. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Фетишизация чужого героизма — этот иронический жест художника, помещённый в интерьер модного креативного пространства, который демонстрирует способность капитализма поглощать любое искусство, превращая его в товар. Окончательная коммодификация произошла: то, что было когда-то героической провокацией, стало изящной золочёной скульптуркой, осуществляя тем самым провокацию уже в другом поле — подрывая авторитеты, сложившиеся в системе актуального искусства.",
+              "spans": []
+            }
+          ]
+        }
+      },
+      "prismicId": "Prismic__Project__W5kVyCkAACkAFIeb__body__2",
+      "id": "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__2",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyText",
+        "contentDigest": "9b89248330fe3a1a6786a21fa34cbc72",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__Project__W5kVyCkAACkAFIeb": {
+      "uid": "my-little-protest",
+      "type": "project",
+      "href": "https://nikita-seleznev.cdn.prismic.io/api/v2/documents/search?ref=W5ktWikAACkAFPIp&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22W5kVyCkAACkAFIeb%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2018-09-12T13:42:11+0000",
+      "last_publication_date": "2018-09-12T13:42:11+0000",
+      "slugs": [
+        "my-little-protest"
+      ],
+      "linked_documents": null,
+      "lang": "ru",
+      "alternate_languages": [],
+      "data": {
+        "title": {
+          "html": "<h1>My little protest</h1>",
+          "text": "My little protest",
+          "raw": [
+            {
+              "type": "heading1",
+              "text": "My little protest",
+              "spans": []
+            }
+          ]
+        },
+        "body___NODE": [
+          "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kVyCkAACkAFIeb__body__0",
+          "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__1",
+          "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__2"
+        ]
+      },
+      "prismicId": "W5kVyCkAACkAFIeb",
+      "id": "Prismic__Project__W5kVyCkAACkAFIeb",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProject",
+        "contentDigest": "865d13b716571dc92f44237e37365210",
+        "owner": "gatsby-source-prismic"
+      },
+      "dataString": "{\"title\":[{\"type\":\"heading1\",\"text\":\"My little protest\",\"spans\":[]}],\"body\":[{\"slice_type\":\"image_gallery\",\"slice_label\":null,\"items\":[{\"alt\":null,\"image\":{\"dimensions\":{\"width\":3000,\"height\":2003},\"alt\":null,\"copyright\":null,\"url\":\"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/2d1a8c38ad815db6d0887928dddb50e063618615_dsc_6287-dsc_6289.jpg\"}},{\"alt\":null,\"image\":{\"dimensions\":{\"width\":1280,\"height\":960},\"alt\":null,\"copyright\":null,\"url\":\"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/fa4a20c94c076cece0bb2f0425d8b1ef7945bf2d_o_ld5czkfqy.jpg\"}}],\"primary\":{}},{\"slice_type\":\"text\",\"slice_label\":null,\"items\":[{}],\"primary\":{\"text\":[{\"type\":\"paragraph\",\"text\":\"My little protest\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Project “My little protest” by Nikita Seleznev is located in public space of one of the Quartariata residence  buildings in Peterhof. It was created during artist's residence in Qurtariata.\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Main part of the project is the series of small gilded figurines, located in the most unexpected places what depicts three images of russian actionism: “ E.T.I.- TEXT” 1991, dog-man Oleg Kulik and “Fixing” Petr Pavlensky.  \",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Fetishization of the stranger's heroism- it is the ironic gesture of the artist. These objects placed in the interior of the fashionable creative space demonstrate the ability of capitalism to absorb any art and turn it into commodity.  The final commodification has been done. That was a heroic provocation what the gilded figurines imply. This means the provocation in other sphere that undermines the norms developed in the system of contemporary art.\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"\",\"spans\":[]}]}},{\"slice_type\":\"text\",\"slice_label\":null,\"items\":[{}],\"primary\":{\"text\":[{\"type\":\"paragraph\",\"text\":\"Мой маленький протест\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Проект  «Мой маленький протест» Никиты Селезнева находится в общественном пространстве одного из зданий резиденции «Квартариата» в Петергофе. Он был создан во время пребывания художника в резиденции. \",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"В основе проекта серия небольших позолоченных фигурок, расположенных в самых неожиданных местах и представляющих три знаменитых образа русского акционизма: «Э. Т. И. — ТЕКСТ» 1991 года, человека-собаку Олега Кулика и «Фиксацию» Петра Павленского. \",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Фетишизация чужого героизма — этот иронический жест художника, помещённый в интерьер модного креативного пространства, который демонстрирует способность капитализма поглощать любое искусство, превращая его в товар. Окончательная коммодификация произошла: то, что было когда-то героической провокацией, стало изящной золочёной скульптуркой, осуществляя тем самым провокацию уже в другом поле — подрывая авторитеты, сложившиеся в системе актуального искусства.\",\"spans\":[]}]}}]}"
+    },
+    "C:/git/poop/.cache/gatsby-source-filesystem/60f7b7022a37ce0ba3e810cb5310f5d1.jpg absPath of file": {
+      "id": "C:/git/poop/.cache/gatsby-source-filesystem/60f7b7022a37ce0ba3e810cb5310f5d1.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "4ed70db4666ce0a1ad4722bc8e5f3d38",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/998ab534ac2c038bb978aaf4412b75459b321644_04.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "C:/git/poop/.cache/gatsby-source-filesystem/60f7b7022a37ce0ba3e810cb5310f5d1.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/60f7b7022a37ce0ba3e810cb5310f5d1.jpg",
+      "extension": "jpg",
+      "size": 6388537,
+      "prettySize": "6.39 MB",
+      "modifiedTime": "2018-09-12T14:04:51.841Z",
+      "accessTime": "2018-09-12T14:04:44.447Z",
+      "changeTime": "2018-09-12T14:04:51.842Z",
+      "birthTime": "2018-09-12T14:04:44.447Z",
+      "root": "C:/",
+      "dir": "C:/git/poop/.cache/gatsby-source-filesystem",
+      "base": "60f7b7022a37ce0ba3e810cb5310f5d1.jpg",
+      "ext": ".jpg",
+      "name": "60f7b7022a37ce0ba3e810cb5310f5d1",
+      "relativeDirectory": ".cache\\gatsby-source-filesystem",
+      "dev": 3036118514,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 1407374883830774,
+      "atimeMs": 1536761084446.7617,
+      "mtimeMs": 1536761091841.0042,
+      "ctimeMs": 1536761091842.0134,
+      "birthtimeMs": 1536761084446.7617,
+      "atime": "2018-09-12T14:04:44.447Z",
+      "mtime": "2018-09-12T14:04:51.841Z",
+      "ctime": "2018-09-12T14:04:51.842Z",
+      "birthtime": "2018-09-12T14:04:44.447Z"
+    },
+    "C:/git/poop/.cache/gatsby-source-filesystem/e4373b435981d0e1fca529f16d4862c2.jpg absPath of file": {
+      "id": "C:/git/poop/.cache/gatsby-source-filesystem/e4373b435981d0e1fca529f16d4862c2.jpg absPath of file",
+      "children": [],
+      "parent": "___SOURCE___",
+      "internal": {
+        "contentDigest": "a3eeaa6ece9f4f60789eaf7dcef5bb0b",
+        "mediaType": "image/jpeg",
+        "type": "File",
+        "description": "File \"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/7b23cf7ae075c5becfa04e3cfa58a65c85323934_02.jpg\"",
+        "owner": "gatsby-source-filesystem"
+      },
+      "sourceInstanceName": "__PROGRAMATTIC__",
+      "absolutePath": "C:/git/poop/.cache/gatsby-source-filesystem/e4373b435981d0e1fca529f16d4862c2.jpg",
+      "relativePath": ".cache/gatsby-source-filesystem/e4373b435981d0e1fca529f16d4862c2.jpg",
+      "extension": "jpg",
+      "size": 7092939,
+      "prettySize": "7.09 MB",
+      "modifiedTime": "2018-09-12T14:04:53.563Z",
+      "accessTime": "2018-09-12T14:04:44.447Z",
+      "changeTime": "2018-09-12T14:04:53.564Z",
+      "birthTime": "2018-09-12T14:04:44.447Z",
+      "root": "C:/",
+      "dir": "C:/git/poop/.cache/gatsby-source-filesystem",
+      "base": "e4373b435981d0e1fca529f16d4862c2.jpg",
+      "ext": ".jpg",
+      "name": "e4373b435981d0e1fca529f16d4862c2",
+      "relativeDirectory": ".cache\\gatsby-source-filesystem",
+      "dev": 3036118514,
+      "mode": 33206,
+      "nlink": 1,
+      "uid": 0,
+      "gid": 0,
+      "rdev": 0,
+      "ino": 1407374883830818,
+      "atimeMs": 1536761084446.7617,
+      "mtimeMs": 1536761093562.6516,
+      "ctimeMs": 1536761093563.6533,
+      "birthtimeMs": 1536761084446.7617,
+      "atime": "2018-09-12T14:04:44.447Z",
+      "mtime": "2018-09-12T14:04:53.563Z",
+      "ctime": "2018-09-12T14:04:53.564Z",
+      "birthtime": "2018-09-12T14:04:44.447Z"
+    },
+    "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kPVSkAACcAFGow__body__0": {
+      "slice_type": "image_gallery",
+      "slice_label": null,
+      "items": [
+        {
+          "alt": "My space",
+          "image": {
+            "dimensions": {
+              "width": 2714,
+              "height": 3932
+            },
+            "alt": "",
+            "copyright": "",
+            "url": "https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/998ab534ac2c038bb978aaf4412b75459b321644_04.jpg",
+            "localFile___NODE": "C:/git/poop/.cache/gatsby-source-filesystem/60f7b7022a37ce0ba3e810cb5310f5d1.jpg absPath of file"
+          }
+        },
+        {
+          "alt": null,
+          "image": {
+            "dimensions": {
+              "width": 2593,
+              "height": 4224
+            },
+            "alt": "",
+            "copyright": "",
+            "url": "https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/7b23cf7ae075c5becfa04e3cfa58a65c85323934_02.jpg",
+            "localFile___NODE": "C:/git/poop/.cache/gatsby-source-filesystem/e4373b435981d0e1fca529f16d4862c2.jpg absPath of file"
+          }
+        }
+      ],
+      "primary": {},
+      "prismicId": "Prismic__Project__W5kPVSkAACcAFGow__body__0",
+      "id": "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kPVSkAACcAFGow__body__0",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyImageGallery",
+        "contentDigest": "18ebac71e807a0c259eaf81c8f641ad4",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__2": {
+      "slice_type": "text",
+      "slice_label": null,
+      "items": [
+        {}
+      ],
+      "primary": {
+        "text": {
+          "html": "<h2>My space</h2><p><strong>“My space”</strong>- it was a performance. During three weeks I made objects in the place which had built for my project in the museum.  Viewers could see  process of space changing. </p><p>The main question of this project: how to be the young artist? In “My space” I represented a ritual of object making and made some kind of fetishes.</p><p>“My space” was very intimate project. I showed personal fears and doubts to viewers and they could came into installation space like place inside of me.</p>",
+          "text": "My space “My space”- it was a performance. During three weeks I made objects in the place which had built for my project in the museum.  Viewers could see  process of space changing.  The main question of this project: how to be the young artist? In “My space” I represented a ritual of object making and made some kind of fetishes. “My space” was very intimate project. I showed personal fears and doubts to viewers and they could came into installation space like place inside of me.",
+          "raw": [
+            {
+              "type": "heading2",
+              "text": "My space",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "“My space”- it was a performance. During three weeks I made objects in the place which had built for my project in the museum.  Viewers could see  process of space changing. ",
+              "spans": [
+                {
+                  "start": 0,
+                  "end": 10,
+                  "type": "strong"
+                }
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The main question of this project: how to be the young artist? In “My space” I represented a ritual of object making and made some kind of fetishes.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "“My space” was very intimate project. I showed personal fears and doubts to viewers and they could came into installation space like place inside of me.",
+              "spans": []
+            }
+          ]
+        }
+      },
+      "prismicId": "Prismic__Project__W5kPVSkAACcAFGow__body__2",
+      "id": "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__2",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyText",
+        "contentDigest": "0d92f4719c3708a8b87dc5b64fdd703a",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__Project__W5kPVSkAACcAFGow": {
+      "uid": "my-space",
+      "type": "project",
+      "href": "https://nikita-seleznev.cdn.prismic.io/api/v2/documents/search?ref=W5ktWikAACkAFPIp&q=%5B%5B%3Ad+%3D+at%28document.id%2C+%22W5kPVSkAACcAFGow%22%29+%5D%5D",
+      "tags": [],
+      "first_publication_date": "2018-09-12T13:09:30+0000",
+      "last_publication_date": "2018-09-12T15:14:34+0000",
+      "slugs": [
+        "my-space"
+      ],
+      "linked_documents": null,
+      "lang": "ru",
+      "alternate_languages": [],
+      "data": {
+        "title": {
+          "html": "<h1>My space</h1>",
+          "text": "My space",
+          "raw": [
+            {
+              "type": "heading1",
+              "text": "My space",
+              "spans": []
+            }
+          ]
+        },
+        "body___NODE": [
+          "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kPVSkAACcAFGow__body__0",
+          "Prismic__ProjectBodyVideo__Prismic__Project__W5kPVSkAACcAFGow__body__1",
+          "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__2",
+          "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__3"
+        ]
+      },
+      "prismicId": "W5kPVSkAACcAFGow",
+      "id": "Prismic__Project__W5kPVSkAACcAFGow",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProject",
+        "contentDigest": "2e04e2936163878afb2a98b73a78b2f2",
+        "owner": "gatsby-source-prismic"
+      },
+      "dataString": "{\"title\":[{\"type\":\"heading1\",\"text\":\"My space\",\"spans\":[]}],\"body\":[{\"slice_type\":\"image_gallery\",\"slice_label\":null,\"items\":[{\"alt\":\"My space\",\"image\":{\"dimensions\":{\"width\":2714,\"height\":3932},\"alt\":null,\"copyright\":null,\"url\":\"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/998ab534ac2c038bb978aaf4412b75459b321644_04.jpg\"}},{\"alt\":null,\"image\":{\"dimensions\":{\"width\":2593,\"height\":4224},\"alt\":null,\"copyright\":null,\"url\":\"https://nikita-seleznev.cdn.prismic.io/nikita-seleznev/7b23cf7ae075c5becfa04e3cfa58a65c85323934_02.jpg\"}}],\"primary\":{}},{\"slice_type\":\"video\",\"slice_label\":null,\"items\":[{}],\"primary\":{\"link\":{\"height\":344,\"width\":459,\"embed_url\":\"https://www.youtube.com/watch?v=0pDGZtkpAPY&t=375s\",\"type\":\"video\",\"version\":\"1.0\",\"title\":\"Robohands - Green [Full Album]\",\"author_name\":\"ProvocativeEducative !\",\"author_url\":\"https://www.youtube.com/channel/UCR_SZLwuBGg9Vpl_HNihCdA\",\"provider_name\":\"YouTube\",\"provider_url\":\"https://www.youtube.com/\",\"cache_age\":null,\"thumbnail_url\":\"https://i.ytimg.com/vi/0pDGZtkpAPY/hqdefault.jpg\",\"thumbnail_width\":480,\"thumbnail_height\":360,\"html\":\"<iframe width=\\\"459\\\" height=\\\"344\\\" src=\\\"https://www.youtube.com/embed/0pDGZtkpAPY?feature=oembed\\\" frameborder=\\\"0\\\" allow=\\\"autoplay; encrypted-media\\\" allowfullscreen></iframe>\"}}},{\"slice_type\":\"text\",\"slice_label\":null,\"items\":[{}],\"primary\":{\"text\":[{\"type\":\"heading2\",\"text\":\"My space\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"“My space”- it was a performance. During three weeks I made objects in the place which had built for my project in the museum.  Viewers could see  process of space changing. \",\"spans\":[{\"start\":0,\"end\":10,\"type\":\"strong\"}]},{\"type\":\"paragraph\",\"text\":\"The main question of this project: how to be the young artist? In “My space” I represented a ritual of object making and made some kind of fetishes.\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"“My space” was very intimate project. I showed personal fears and doubts to viewers and they could came into installation space like place inside of me.\",\"spans\":[]}]}},{\"slice_type\":\"text\",\"slice_label\":null,\"items\":[{}],\"primary\":{\"text\":[{\"type\":\"heading2\",\"text\":\"Мое место\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\" “Мое место”- это в первую очередь процесс. В течении трех недель я обживал пространство, построенное для моего проекта внутри музея. Зрители могли наблюдать, как меняется пространство.\",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\"Основной задачей, которая стояла передо мной во время перформанса было, обнаружить различные культурные слои, которые сформировали мою идентичность, попробовать найти связи между ними. \",\"spans\":[]},{\"type\":\"paragraph\",\"text\":\" Обратившись к привычной для себя техники лепки, я формировал в пространстве некий дневник образов. Проект оказался очень интимным, в нем проявилось много личных страхов и переживаний.\",\"spans\":[]}]}}]}"
+    },
+    "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__3": {
+      "slice_type": "text",
+      "slice_label": null,
+      "items": [
+        {}
+      ],
+      "primary": {
+        "text": {
+          "html": "<h2>Мое место</h2><p> “Мое место”- это в первую очередь процесс. В течении трех недель я обживал пространство, построенное для моего проекта внутри музея. Зрители могли наблюдать, как меняется пространство.</p><p>Основной задачей, которая стояла передо мной во время перформанса было, обнаружить различные культурные слои, которые сформировали мою идентичность, попробовать найти связи между ними. </p><p> Обратившись к привычной для себя техники лепки, я формировал в пространстве некий дневник образов. Проект оказался очень интимным, в нем проявилось много личных страхов и переживаний.</p>",
+          "text": "Мое место  “Мое место”- это в первую очередь процесс. В течении трех недель я обживал пространство, построенное для моего проекта внутри музея. Зрители могли наблюдать, как меняется пространство. Основной задачей, которая стояла передо мной во время перформанса было, обнаружить различные культурные слои, которые сформировали мою идентичность, попробовать найти связи между ними.   Обратившись к привычной для себя техники лепки, я формировал в пространстве некий дневник образов. Проект оказался очень интимным, в нем проявилось много личных страхов и переживаний.",
+          "raw": [
+            {
+              "type": "heading2",
+              "text": "Мое место",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": " “Мое место”- это в первую очередь процесс. В течении трех недель я обживал пространство, построенное для моего проекта внутри музея. Зрители могли наблюдать, как меняется пространство.",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": "Основной задачей, которая стояла передо мной во время перформанса было, обнаружить различные культурные слои, которые сформировали мою идентичность, попробовать найти связи между ними. ",
+              "spans": []
+            },
+            {
+              "type": "paragraph",
+              "text": " Обратившись к привычной для себя техники лепки, я формировал в пространстве некий дневник образов. Проект оказался очень интимным, в нем проявилось много личных страхов и переживаний.",
+              "spans": []
+            }
+          ]
+        }
+      },
+      "prismicId": "Prismic__Project__W5kPVSkAACcAFGow__body__3",
+      "id": "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__3",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyText",
+        "contentDigest": "9f4f710106d455830feaf2f15aace07e",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "Prismic__ProjectBodyVideo__Prismic__Project__W5kPVSkAACcAFGow__body__1": {
+      "slice_type": "video",
+      "slice_label": null,
+      "items": [
+        {}
+      ],
+      "primary": {
+        "link": {
+          "height": 344,
+          "width": 459,
+          "embed_url": "https://www.youtube.com/watch?v=0pDGZtkpAPY&t=375s",
+          "type": "video",
+          "version": "1.0",
+          "title": "Robohands - Green [Full Album]",
+          "author_name": "ProvocativeEducative !",
+          "author_url": "https://www.youtube.com/channel/UCR_SZLwuBGg9Vpl_HNihCdA",
+          "provider_name": "YouTube",
+          "provider_url": "https://www.youtube.com/",
+          "cache_age": null,
+          "thumbnail_url": "https://i.ytimg.com/vi/0pDGZtkpAPY/hqdefault.jpg",
+          "thumbnail_width": 480,
+          "thumbnail_height": 360,
+          "html": "<iframe width=\"459\" height=\"344\" src=\"https://www.youtube.com/embed/0pDGZtkpAPY?feature=oembed\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+        }
+      },
+      "prismicId": "Prismic__Project__W5kPVSkAACcAFGow__body__1",
+      "id": "Prismic__ProjectBodyVideo__Prismic__Project__W5kPVSkAACcAFGow__body__1",
+      "parent": "__SOURCE__",
+      "children": [],
+      "internal": {
+        "type": "PrismicProjectBodyVideo",
+        "contentDigest": "c506f66d4b21cc3ca35a187e1b0272c2",
+        "owner": "gatsby-source-prismic"
+      }
+    },
+    "SitePage /my-little-protest": {
+      "jsonName": "my-little-protest-c11",
+      "internalComponentName": "ComponentMyLittleProtest",
+      "path": "/my-little-protest",
+      "component": "C:/git/poop/src/templates/project.js",
+      "componentChunkName": "component---src-templates-project-js",
+      "context": {
+        "uid": "my-little-protest"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "C:/git/poop/src/templates/project.js",
+      "id": "SitePage /my-little-protest",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "fd748e1e0541b1c2cc85fa5069bb5d95",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /my-space": {
+      "jsonName": "my-space-660",
+      "internalComponentName": "ComponentMySpace",
+      "path": "/my-space",
+      "component": "C:/git/poop/src/templates/project.js",
+      "componentChunkName": "component---src-templates-project-js",
+      "context": {
+        "uid": "my-space"
+      },
+      "pluginCreator___NODE": "Plugin default-site-plugin",
+      "pluginCreatorId": "Plugin default-site-plugin",
+      "componentPath": "C:/git/poop/src/templates/project.js",
+      "id": "SitePage /my-space",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "c60e4479cd100feedf054b394c13c274",
+        "description": "Your site's \"gatsby-node.js\"",
+        "owner": "internal-data-bridge"
+      }
+    },
+    "SitePage /about/": {
+      "jsonName": "about-f34",
+      "internalComponentName": "ComponentAbout",
+      "path": "/about/",
+      "component": "C:/git/poop/src/pages/about.js",
+      "componentChunkName": "component---src-pages-about-js",
+      "context": {},
+      "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
+      "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
+      "componentPath": "C:/git/poop/src/pages/about.js",
+      "id": "SitePage /about/",
+      "parent": "SOURCE",
+      "children": [],
+      "internal": {
+        "type": "SitePage",
+        "contentDigest": "8679648ee16b0952aa38dea6e8a3ea86",
+        "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
     },
@@ -383,22 +1106,22 @@
         "owner": "internal-data-bridge"
       }
     },
-    "SitePage /page-2/": {
-      "jsonName": "page-2-fbc",
-      "internalComponentName": "ComponentPage2",
-      "path": "/page-2/",
-      "component": "C:/git/poop/src/pages/page-2.js",
-      "componentChunkName": "component---src-pages-page-2-js",
+    "SitePage /projects/": {
+      "jsonName": "projects-9e9",
+      "internalComponentName": "ComponentProjects",
+      "path": "/projects/",
+      "component": "C:/git/poop/src/pages/projects.js",
+      "componentChunkName": "component---src-pages-projects-js",
       "context": {},
       "pluginCreator___NODE": "Plugin gatsby-plugin-page-creator",
       "pluginCreatorId": "Plugin gatsby-plugin-page-creator",
-      "componentPath": "C:/git/poop/src/pages/page-2.js",
-      "id": "SitePage /page-2/",
+      "componentPath": "C:/git/poop/src/pages/projects.js",
+      "id": "SitePage /projects/",
       "parent": "SOURCE",
       "children": [],
       "internal": {
         "type": "SitePage",
-        "contentDigest": "57f85eed9539c4e27f9aab5f75652a53",
+        "contentDigest": "2c70a1d9cc932de071cc721d7550ffdf",
         "description": "Plugin gatsby-plugin-page-creator",
         "owner": "internal-data-bridge"
       }
@@ -406,29 +1129,88 @@
   },
   "status": {
     "plugins": {},
-    "PLUGINS_HASH": "e9b897f14f75f4226152906d0cc23e76"
+    "PLUGINS_HASH": "6c1e69bce40fcb9d25e5609cc2771cdc"
   },
   "componentDataDependencies": {
-    "nodes": {},
-    "connections": {}
+    "nodes": {
+      "Prismic__Project__W5kVyCkAACkAFIeb": [
+        "/my-little-protest"
+      ],
+      "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kVyCkAACkAFIeb__body__0": [
+        "/",
+        "/my-little-protest"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__1": [
+        "/",
+        "/my-little-protest"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kVyCkAACkAFIeb__body__2": [
+        "/",
+        "/my-little-protest"
+      ],
+      "Prismic__Project__W5kPVSkAACcAFGow": [
+        "/",
+        "/my-space"
+      ],
+      "Prismic__ProjectBodyImageGallery__Prismic__Project__W5kPVSkAACcAFGow__body__0": [
+        "/",
+        "/my-space"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__1": [
+        "/"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__2": [
+        "/",
+        "/my-space"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__3": [
+        "/",
+        "/my-space"
+      ],
+      "Prismic__ProjectBodyText__Prismic__Project__W5kPVSkAACcAFGow__body__4": [
+        "/"
+      ],
+      "Prismic__ProjectBodyVideo__Prismic__Project__W5kPVSkAACcAFGow__body__1": [
+        "/",
+        "/my-space"
+      ]
+    },
+    "connections": {
+      "PrismicProject": [
+        "/page-2/",
+        "/projects/"
+      ]
+    }
   },
   "jsonDataPaths": {
-    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
     "index": "173/path---index-6a9-NZuapzHg3X9TaN1iIixfv1W23E",
-    "page-2-fbc": "53/path---page-2-fbc-5a8-NZuapzHg3X9TaN1iIixfv1W23E"
+    "page-2-fbc": "219/path---page-2-fbc-5a8-YEyUjYZf3VIiTLqRap4N5NchqJA",
+    "about-f34": "125/path---about-f-34-4c2-NZuapzHg3X9TaN1iIixfv1W23E",
+    "dev-404-page-5f9": "920/path---dev-404-page-5-f-9-fab-NZuapzHg3X9TaN1iIixfv1W23E",
+    "projects-9e9": "502/path---projects-9-e-9-957-YEyUjYZf3VIiTLqRap4N5NchqJA",
+    "my-little-protest-c11": "169/path---my-little-protest-c-11-9e3-4UoXj4rPbkgM0lTwrGJenRHLFsY",
+    "my-space-660": "959/path---my-space-660-283-UYYyULZhVlhhOfADyFXYGQD3idI"
   },
   "components": {
+    "C:/git/poop/src/templates/project.js": {
+      "query": "query ProjectQuery(\n  $uid: String!\n) {\n  project: prismicProject(uid: {eq: $uid}) {\n    data {\n      title {\n        text\n      }\n      body {\n        __typename\n        ... on PrismicProjectBodyImageGallery {\n          items {\n            image {\n              url\n            }\n            alt\n          }\n        }\n        ... on PrismicProjectBodyText {\n          primary {\n            text {\n              html\n            }\n          }\n        }\n        ... on PrismicProjectBodyVideo {\n          primary {\n            link {\n              html\n            }\n          }\n        }\n      }\n    }\n  }\n}\n",
+      "componentPath": "C:/git/poop/src/templates/project.js"
+    },
     "C:/git/poop/.cache/dev-404-page.js": {
       "query": "",
       "componentPath": "C:/git/poop/.cache/dev-404-page.js"
+    },
+    "C:/git/poop/src/pages/about.js": {
+      "query": "",
+      "componentPath": "C:/git/poop/src/pages/about.js"
     },
     "C:/git/poop/src/pages/index.js": {
       "query": "",
       "componentPath": "C:/git/poop/src/pages/index.js"
     },
-    "C:/git/poop/src/pages/page-2.js": {
-      "query": "",
-      "componentPath": "C:/git/poop/src/pages/page-2.js"
+    "C:/git/poop/src/pages/projects.js": {
+      "query": "query ProjectsQuery {\n  projects: allPrismicProject {\n    edges {\n      node {\n        uid\n        data {\n          title {\n            text\n          }\n        }\n      }\n    }\n  }\n}\n",
+      "componentPath": "C:/git/poop/src/pages/projects.js"
     }
   },
   "staticQueryComponents": {}

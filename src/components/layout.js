@@ -10,7 +10,10 @@ const Layout = ({ children }) => (
        <Link to="/">Home</Link>
      </li>
      <li>
-       <Link to="/page-2">Page 2</Link>
+       <Link to="/projects">Projects</Link>
+     </li>
+     <li>
+       <Link to="/about">About+contacts</Link>
      </li>
    </ul>
    <div className="container">{children}</div>
