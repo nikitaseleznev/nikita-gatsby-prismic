@@ -6,8 +6,8 @@ import Layout from '../components/layout'
 const IndexPage = () => (
   <Layout>
     <h1>NIKITA SELEZNEV</h1>
-    <p><Link to="/projects/">PROJECTS</Link></p>
-    <p><Link to="/about/">ABOUT+CONTACT</Link></p>
+    <p style={{paddingLeft: '12px'}}><Link to="/projects/">PROJECTS</Link></p>
+    <p style={{paddingLeft: '12px'}}><Link to="/about/">ABOUT+CONTACTS</Link></p>
   </Layout>
 )
 

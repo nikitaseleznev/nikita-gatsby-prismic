@@ -61,8 +61,3 @@ typings/
 .next
 .cache/
 public/
-.cache/async-requires.js
-.cache/data.json
-.cache/pages.json
-.cache/redux-state.json
-.cache/sync-requires.js

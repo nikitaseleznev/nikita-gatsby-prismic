@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-
+import Img from 'gatsby-image'
 import Layout from '../components/layout'
-import Img from "../components/Img"
+//import Img from "../components/Img"
 
 export default ({ data }) => {
   const project = data.project.data
@@ -14,16 +14,25 @@ export default ({ data }) => {
           <div key={i}>
             {block.__typename === 'PrismicProjectBodyImageGallery' &&
               block.items.map((item, j) => (
-                <Img 
-                  key={`${j}-image`}
+                <div
+                  key={`${j}-image-container`}
                   className="img"
-                  src={item.image.url}
-                  alt={item.alt}
-                />                
+                >{item.image && item.image.localFile && (
+                  <Img 
+                    key={`${j}-image`}
+                    fluid={item.image.localFile.childImageSharp.fluid}
+                    alt={item.alt}
+                    imgStyle={{
+                      objectFit: 'contain'
+                    }}
+                  />                
+                )}
+                </div>
               ))}
             {block.__typename === 'PrismicProjectBodyText' &&
               <div 
-                key={`${i}-text`} 
+                key={`${i}-text`}
+                className="text-container"
                 dangerouslySetInnerHTML={{ __html: block.primary.text.html }} 
               />
             }
@@ -54,6 +63,17 @@ export const pageQuery = graphql`
             items {
               image {
                 url
+                localFile {
+                  childImageSharp {
+                    fluid(maxWidth: 720, quality: 80, traceSVG: {
+                      color: "#000000"
+                      turnPolicy: TURNPOLICY_MINORITY
+                      blackOnWhite: false
+                    }) {
+                      ...GatsbyImageSharpFluid_tracedSVG
+                    }
+                  }
+                }
               }
               alt
             }
@@ -65,19 +85,15 @@ export const pageQuery = graphql`
               }
             }
           }
-          
-        }
-      }
-    }
-  }
-`
-
-/* 
-... on PrismicProjectBodyVideo {
+          ... on PrismicProjectBodyVideo {
             primary {
               link {
                 html
               }
             }
           }
-*/
+        }
+      }
+    }
+  }
+`
