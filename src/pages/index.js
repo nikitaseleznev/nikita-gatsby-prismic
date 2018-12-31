@@ -6,9 +6,28 @@ import Layout from '../components/layout'
 const IndexPage = () => (
   <Layout>
     <h1>NIKITA SELEZNEV</h1>
-    <p style={{paddingLeft: '12px'}}><Link to="/projects/">PROJECTS</Link></p>
-    <p style={{paddingLeft: '12px'}}><Link to="/about/">ABOUT+CONTACTS</Link></p>
+    <div className="img">
+    {data.img && data.img && (
+      <Img fluid={data.img.childImageSharp.fluid} />
+    )}
+    {console.log(data)}
+    </div>
   </Layout>
 )
 
 export default IndexPage
+export const pageQuery = graphql`
+  query AboutQuery {
+    img: file(relativePath: {eq: "91.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 720, quality: 80, traceSVG: {
+          color: "#000000"
+          turnPolicy: TURNPOLICY_MINORITY
+          blackOnWhite: false
+        }) {
+          ...GatsbyImageSharpFluid_tracedSVG
+        }
+      }
+    }
+  }
+`
