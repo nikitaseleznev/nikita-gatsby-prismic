@@ -3,7 +3,9 @@ import { Link } from "gatsby";
 
 import "./styles.css";
 import Img from "../components/Img";
-
+import ep_01 from "../img/ep_01.jpg";
+import ep_02 from "../img/ep_02.jpg";
+import ep_03 from "../img/ep_03.jpg";
 
 const Layout = ({ children }) => (
 <>
