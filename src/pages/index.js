@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 
 const IndexPage = () => (
   <Layout>
-    <h1>NIKITA SELEZNEV</h1>
+    <h1>Katerina Sokolovskaya</h1>
     <p style={{paddingLeft: '12px'}}><Link to="/projects/">PROJECTS</Link></p>
     <p style={{paddingLeft: '12px'}}><Link to="/about/">ABOUT+CONTACTS</Link></p>
   </Layout>
