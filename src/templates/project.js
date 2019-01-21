@@ -4,10 +4,10 @@ import Img from 'gatsby-image'
 import Layout from '../components/layout'
 //import Img from "../components/Img"
 
-export default ({ data }) => {
+export default ({ data, location }) => {
   const project = data.project.data
   return (
-    <Layout>
+    <Layout location={location}>
       <h1>{project.title.text}</h1>
       <div>
         {project.body.map((block, i) => (

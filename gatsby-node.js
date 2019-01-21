@@ -16,19 +16,19 @@ exports.createPages = async ({ actions, graphql }) => {
     })
   }
 
-  const pages = await graphql(`
-    {
-      allPrismicProject(limit: 2000) {
-        edges {
-          node {
-            uid
-          }
-        }
-      }
-    }
-  `)
+  // const pages = await graphql(`
+  //   {
+  //     allPrismicProject(limit: 2000) {
+  //       edges {
+  //         node {
+  //           uid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
-  for (const key in pages.data) {
-    pageMaker(key)(pages.data[key])
-  }
+  // for (const key in pages.data) {
+  //   pageMaker(key)(pages.data[key])
+  // }
 }

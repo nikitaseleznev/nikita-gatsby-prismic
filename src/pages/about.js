@@ -3,8 +3,8 @@ import React from 'react'
 import Img from "gatsby-image";
 
 import Layout from '../components/layout'
-const IndexPage = ({ data }) => (
-  <Layout>
+const IndexPage = ({ data, location }) => (
+  <Layout location={location}>
     <h2>About</h2>
     <p>b. 1990, Perm, USSR.  Based in Saint-Petersburg,Russia. He is half of <a href="http://NKlab.design/" target="_blank" rel="noopener noreferrer">NKLab</a>, a founding member of the artist co-op <a href="https://bezmestie.tumblr.com" target="_blank" rel="noopener noreferrer">BZMST</a>.
    </p>

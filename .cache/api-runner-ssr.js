@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('C:/git/nikita-gatsby-prismic/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[]},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {

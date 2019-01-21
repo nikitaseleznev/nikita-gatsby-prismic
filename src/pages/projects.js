@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/layout'
 
-export default ({data}) => (
- <Layout>
+export default ({data, location}) => (
+ <Layout location={location}>
    <h1>Projects</h1>
    <ul>
       {data.projects.edges.map(({ node }) => (
