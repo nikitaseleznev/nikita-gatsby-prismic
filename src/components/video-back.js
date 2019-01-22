@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import YouTube from 'react-youtube'
 
 const Video = () => {
@@ -31,4 +31,4 @@ const Video = () => {
   />
 }
 
-export default Video
+export default memo(Video)

@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Poop',
+    siteUrl: 'https://nikita-seleznev.com',
   },
   plugins: [
     // 'gatsby-plugin-react-helmet',

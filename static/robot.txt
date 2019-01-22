@@ -1,7 +1,3 @@
-User-agent: Yandex
-Allow: /
-sitemap: https://nikita-seleznev.netlify.com/sitemap.xml
-
 User-agent: *
 Allow: /
-sitemap: https://nikita-seleznev.netlify.com/sitemap.xml
+sitemap: https://nikita-seleznev.com/sitemap.xml
