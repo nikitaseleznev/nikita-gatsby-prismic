@@ -1,5 +1,4 @@
 import React from 'react'
-//import { Link } from 'gatsby'
 import Img from "gatsby-image";
 
 import Layout from '../components/layout'
@@ -16,7 +15,6 @@ const IndexPage = ({ data, location }) => (
     {data.img && data.img && (
       <Img fluid={data.img.childImageSharp.fluid} />
     )}
-    {console.log(data)}
     </div>
   </Layout>
 )
