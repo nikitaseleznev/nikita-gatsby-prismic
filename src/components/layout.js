@@ -1,27 +1,35 @@
-import React, { memo } from "react"
-import { Link } from "gatsby"
+import React, { memo } from 'react';
+import { Link } from 'gatsby';
 
-import "./styles.css"
+import './styles.css';
 
-import Video from './video-back'
+import Video from './video-back';
 
 const Layout = ({ children, location }) => (
   <>
-    <div className="video-background">
-      <div className="video-foreground">
-        <Video />
+    {location.pathname === '/' && (
+      <div className="video-background">
+        <div className="video-foreground">
+          <Video />
+        </div>
       </div>
-    </div>
-    <div className={location.pathname === '/' ? 'main' : 'main white'}>
+    )}
+    <div className="main">
       <ul className="links container">
         <li>
-          <Link className="header-link" to="/">Home</Link>
+          <Link className="header-link" to="/">
+            Home
+          </Link>
         </li>
         <li>
-          <Link className="header-link" to="/projects">Projects</Link>
+          <Link className="header-link" to="/projects">
+            Projects
+          </Link>
         </li>
         <li>
-          <Link className="header-link" to="/about">About</Link>
+          <Link className="header-link" to="/about">
+            About
+          </Link>
         </li>
       </ul>
       <div className="container">{children}</div>
@@ -29,4 +37,4 @@ const Layout = ({ children, location }) => (
   </>
 );
 
-export default memo(Layout)
+export default memo(Layout);
