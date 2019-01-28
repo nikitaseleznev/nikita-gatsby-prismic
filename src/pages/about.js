@@ -11,11 +11,7 @@ const IndexPage = ({ data, location }) => (
     <p>
       <a href="https://docs.google.com/document/d/e/2PACX-1vRioH2RT1qibRX1Wl98U-nf-3srSwI84rYBpHNDq35nQdDKp7bOZHCnVU5K-8V_fV_B30EHXHBQEk58/pub?embedded=true" target="_blank" rel="noopener noreferrer">CV</a>&nbsp;&#47;&#47; seleznevnikitasculptura@gmail.com
     </p>
-    <div className="img">
-    {data.img && data.img && (
-      <Img fluid={data.img.childImageSharp.fluid} />
-    )}
-    </div>
+   
   </Layout>
 )
 
