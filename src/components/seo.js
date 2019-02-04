@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Location } from '@reach/router';
-import jsonldGenerator from '../../utils/jsonld-generator'; // eslint-disable-line
+import jsonldGenerator from '../utils/jsonld-generator';
 
 const seoQuery = graphql`
   query {
