@@ -38,7 +38,7 @@ export default ({
           position: 2,
           item: {
             '@id': canonical,
-            name: pageTitle,
+            name: pageTitleFull,
           },
         },
       ],
