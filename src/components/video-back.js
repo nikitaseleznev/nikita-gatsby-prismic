@@ -33,7 +33,7 @@ class Video extends PureComponent {
       },
     };
 
-    return isPlay ? (
+    return this.state.isPlay ? (
       <YouTube
         videoId="JCrmFHC9sSM"
         className="video-iframe"
