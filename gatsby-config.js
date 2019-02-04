@@ -3,8 +3,8 @@ const path = require('path')
 // SEO configuration
 const siteTitle = 'Nikita Seleznev';
 const siteUrl = 'https://nikita-seleznev.com';
-const siteDescription = 'Nikita Seleznev';
-const siteKeywords = 'nikita, seleznev';
+const siteDescription = 'Nikita Seleznev - artist, works with installations, sculpture, objects.';
+const siteKeywords = 'nikita, seleznev, artist, installation, sculpture, objects, никита, селезнев, скульптор, художник, скульптура, инсталляция';
 const siteThemeColor = '#000000';
 
 // Accounts & API keys
