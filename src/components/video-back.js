@@ -33,15 +33,17 @@ class Video extends PureComponent {
       },
     };
 
-    return this.state.isPlay ? (
-      <YouTube
-        videoId="JCrmFHC9sSM"
-        className="video-iframe"
-        opts={opts}
-        onReady={this.onReady}
-        onEnd={this.onEnd}
-      />
-    ) : null;
+    return (
+      <div style={{ opacity: this.state.isPlay ? 1 : 0 }}>
+        <YouTube
+          videoId="JCrmFHC9sSM"
+          className="video-iframe"
+          opts={opts}
+          onReady={this.onReady}
+          onEnd={this.onEnd}
+        />
+      </div>
+    );
   }
 }
 
