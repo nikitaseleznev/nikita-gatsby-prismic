@@ -16,6 +16,7 @@ const Video = () => {
 
   const onReady = event => {
     event.target.mute()
+    event.target.playVideo()
   }
 
   const onEnd = event => {
