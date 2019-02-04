@@ -101,6 +101,7 @@ li {
   z-index: 1;
 }
 .video-foreground,
+.video-wrapper,
 .video-background iframe {
   position: absolute;
   top: 0;

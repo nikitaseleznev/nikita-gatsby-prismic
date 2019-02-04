@@ -34,7 +34,10 @@ class Video extends PureComponent {
     };
 
     return (
-      <div style={{ opacity: this.state.isPlay ? 1 : 0 }}>
+      <div
+        className="video-wrapper"
+        style={{ opacity: this.state.isPlay ? 1 : 0 }}
+      >
         <YouTube
           videoId="JCrmFHC9sSM"
           className="video-iframe"
