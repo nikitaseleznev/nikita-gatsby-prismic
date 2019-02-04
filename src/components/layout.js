@@ -5,8 +5,9 @@ import './styles.css';
 
 import Video from './video-back';
 
-const Layout = ({ children, location }) => (
+const Layout = ({ data, children, location }) => (
   <>
+    <Seo />
     {location.pathname === '/' && (
       <div className="video-background">
         <div className="video-foreground">
