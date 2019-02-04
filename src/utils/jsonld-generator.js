@@ -5,18 +5,17 @@ export default ({
   pathname,
   canonical,
   siteUrl,
-  pageTitle,
   siteTitle,
   pageTitleFull,
 }) => {
-  const isSubPage = pageTitle && pathname !== '/'
+  const isSubPage = pathname !== '/'
 
   const schema = [
     {
       '@context': 'http://schema.org',
       '@type': 'WebSite',
       url: canonical,
-      name: pageTitle || siteTitle,
+      name: siteTitle,
       alternateName: pageTitleFull,
     },
   ]
@@ -39,7 +38,7 @@ export default ({
           position: 2,
           item: {
             '@id': canonical,
-            name: pageTitle,
+            name: pageTitleFull,
           },
         },
       ],

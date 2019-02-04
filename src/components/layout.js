@@ -4,8 +4,9 @@ import { Link } from 'gatsby';
 import './styles.css';
 
 import Video from './video-back';
+import Seo from './seo'
 
-const Layout = ({ data, children, location }) => (
+const Layout = ({ children, location }) => (
   <>
     <Seo />
     {location.pathname === '/' && (

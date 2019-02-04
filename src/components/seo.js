@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import { Location } from '@reach/router';
-import jsonldGenerator from '../../utils/jsonld-generator'; // eslint-disable-line
+import jsonldGenerator from '../utils/jsonld-generator';
 
 const seoQuery = graphql`
   query {
@@ -24,10 +24,6 @@ const seoQuery = graphql`
 `;
 
 const Seo = ({
-  pageTitle,
-  pageDescription,
-  pageKeywords,
-  pageImage,
   pathname,
   config,
 }) => {
@@ -40,7 +36,7 @@ const Seo = ({
     social,
   } = config;
   const pageTitleFull = siteTitle;
-  const pageDescriptionFull = iteDescription;
+  const pageDescriptionFull = siteDescription;
   const pageKeywordsFull = siteKeywords;
   const pageImageFull = '/images/social.png';
   const canonical = siteUrl + (pathname || '');
@@ -186,7 +182,6 @@ const Seo = ({
             pathname,
             canonical,
             siteUrl,
-            pageTitle,
             siteTitle,
             pageTitleFull,
           })
@@ -197,14 +192,8 @@ const Seo = ({
 };
 
 Seo.propTypes = {
+  config: PropTypes.objectOf(PropTypes.any).isRequired,
   pathname: PropTypes.string.isRequired,
-};
-
-Seo.defaultProps = {
-  pageTitle: null,
-  pageDescription: null,
-  pageKeywords: null,
-  pageImage: null,
 };
 
 const withStaticQuery = props => (

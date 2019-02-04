@@ -101,6 +101,7 @@ li {
   z-index: 1;
 }
 .video-foreground,
+.video-wrapper,
 .video-background iframe {
   position: absolute;
   top: 0;
@@ -115,4 +116,8 @@ li {
 }
 @media (max-aspect-ratio: 16/9) {
   .video-foreground { width: 300%; left: -100%; }
+}
+
+.video-wrapper {
+  transition: opacity 400ms ease-in-out 600ms;
 }
