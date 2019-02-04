@@ -24,10 +24,6 @@ const seoQuery = graphql`
 `;
 
 const Seo = ({
-  pageTitle,
-  pageDescription,
-  pageKeywords,
-  pageImage,
   pathname,
   config,
 }) => {
@@ -40,7 +36,7 @@ const Seo = ({
     social,
   } = config;
   const pageTitleFull = siteTitle;
-  const pageDescriptionFull = iteDescription;
+  const pageDescriptionFull = siteDescription;
   const pageKeywordsFull = siteKeywords;
   const pageImageFull = '/images/social.png';
   const canonical = siteUrl + (pathname || '');
