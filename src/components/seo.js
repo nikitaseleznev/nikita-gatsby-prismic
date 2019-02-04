@@ -182,7 +182,6 @@ const Seo = ({
             pathname,
             canonical,
             siteUrl,
-            pageTitle,
             siteTitle,
             pageTitleFull,
           })
@@ -193,14 +192,8 @@ const Seo = ({
 };
 
 Seo.propTypes = {
+  config: PropTypes.objectOf(PropTypes.any).isRequired,
   pathname: PropTypes.string.isRequired,
-};
-
-Seo.defaultProps = {
-  pageTitle: null,
-  pageDescription: null,
-  pageKeywords: null,
-  pageImage: null,
 };
 
 const withStaticQuery = props => (
