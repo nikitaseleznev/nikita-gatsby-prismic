@@ -27,7 +27,7 @@
     "build:dir": "mkdir -p public/icons/",
     "build:favicons": "node scripts/favicons",
     "build:gatsby": "gatsby build",
-    "build": "npm run build:dir && npm run build:favicons && npm run build:gatsby",
+    "build": "npm run build:gatsby",
     "develop": "gatsby develop",
     "serve": "gatsby serve"
   },
