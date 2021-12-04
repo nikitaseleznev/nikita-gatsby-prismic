@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 //import Img from "../components/Img"
 
@@ -18,7 +18,7 @@ export default ({ data, location }) => {
                   key={`${j}-image-container`}
                   className="img"
                 >{item.image && item.image.localFile && (
-                  <Img 
+                  <StaticImage 
                     key={`${j}-image`}
                     fluid={item.image.localFile.childImageSharp.fluid}
                     alt={item.alt}
