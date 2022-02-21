@@ -4,12 +4,16 @@ import Layout from '../components/layout'
 const IndexPage = ({ data, location }) => (
   <Layout location={location}>
     <h2>About</h2>
-    <p>Nikita Seleznev (b. Perm, 1990) was trained at the Saint Petersburg Stieglitz Academy of Art and Design. His concentration was in monumental-decorative sculpture, a distinctive curriculum best known in Russia and the countries of the former Soviet Bloc. His aesthetic awareness was informed primarily by European Modernism, particularly cubism, surrealism, as well as the more recent polystylism of the 1990’s and early 2000’s. 
+    <p>Nikita Seleznev
+St. Petersburg, Russia
 </p>
-<p>Seleznev challenges the place and logic of sculpture in a modern, more international context. Interested in materiality, Seleznev has worked with more conventional sculptural materials—for example, clay and concrete—as well as found objects, textiles, metal, plastics and composite materials. He often combines objects, both handmade and computer-assisted, with sound and video in his sculptural installations, paying attention to three sensory perceptions except: touch, sight and touch.
- </p>
-<p>In one of his recent projects, Karate Poetry (St. Petersburg, 2020), Seleznev visited a variety of online communities, where fresh visual culture is always being formed. He specifically questioned how sculpture might transformed from an idea (e.g., language or an expression) in a physical object, which could then be retransformed to then into a digital one.
-   </p>
+<p>Nikita Seleznev is a multi-media artist, who lives and works in St. Petersburg. Born in Perm in 1990, he studied sculpture at the St. Petersburg Stieglitz State Academy of Art and Design. 
+</p>
+<p>Since 2018, Seleznev has had several solo exhibitions, including My Green Crocodile, Navicula Artis, St. Petersburg (2018); Karate Poetry, MYTH, St. Petersburg (2020) and Suburbia, Victoria Art Gallery, Samara (2020) and Unfinished Project, The Boris Yeltsin Presidential Center, Ekaterinburg, (2021).
+ His work has been featured in several group exhibitions, including Los Atravesados, Treize, Paris (2018); Horizon-19, New Museum of Modern Art, St. Petersburg (2019); I don't know whether the Earth is spinning or not…, VII Moscow International Biennale of Young Art (2020); 20:20. Time Has Stopped, Moscow Museum of Modern Art (2020); Assuming Distance: Speculations, Fakes, and Predictions in the Age of the Coronacene, Garage Museum of Contemporary Art, Moscow (2021) and Thinking hands touching each other, the main project of the 6th Ural Industrial Biennial, Ekaterinburg (2021) .  
+</p>
+<p>Karate Poetry was shortlisted for the "Innovation-2021" State Prize in the "New Generation" category. Previously, Seleznev participated in the CEC ArtsLink Art Prospect Fellows Program (New York, 2019) and was a resident of the Garage Studios (Moscow, 2021).
+</p>
 
     <p>
       <a href="https://docs.google.com/document/d/e/2PACX-1vRioH2RT1qibRX1Wl98U-nf-3srSwI84rYBpHNDq35nQdDKp7bOZHCnVU5K-8V_fV_B30EHXHBQEk58/pub?embedded=true" target="_blank" rel="noopener noreferrer">CV</a>&nbsp;&#47;&#47; seleznevnikitasculptura@gmail.com
