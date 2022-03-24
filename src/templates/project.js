@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
 //import Img from "../components/Img"
 
@@ -18,14 +18,13 @@ export default ({ data, location }) => {
                   key={`${j}-image-container`}
                   className="img"
                 >{item.image && item.image.localFile && (
-                  <Img 
+                  <GatsbyImage
+                    image={item.image.localFile.childImageSharp.gatsbyImageData}
                     key={`${j}-image`}
-                    fluid={item.image.localFile.childImageSharp.fluid}
                     alt={item.alt}
                     imgStyle={{
                       objectFit: 'contain'
-                    }}
-                  />                
+                    }} />                
                 )}
                 </div>
               ))}
@@ -47,53 +46,52 @@ export default ({ data, location }) => {
         ))}
       </div>
     </Layout>
-  )
+  );
 }
 
-export const pageQuery = graphql`
-  query ProjectQuery($uid: String!) {
-    project: prismicProject(uid: {eq: $uid}) {
-      data {
-        title {
-          text
-        }
-        body {
-          __typename
-          ... on PrismicProjectBodyImageGallery {
-            items {
-              image {
-                url
-                localFile {
-                  childImageSharp {
-                    fluid(maxWidth: 720, quality: 80, traceSVG: {
-                      color: "#000000"
-                      turnPolicy: TURNPOLICY_MINORITY
-                      blackOnWhite: false
-                    }) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                    }
-                  }
+export const pageQuery = graphql`query ProjectQuery($uid: String!) {
+  project: prismicProject(uid: {eq: $uid}) {
+    data {
+      title {
+        text
+      }
+      body {
+        __typename
+        ... on PrismicProjectBodyImageGallery {
+          items {
+            image {
+              url
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 720
+                    quality: 80
+                    tracedSVGOptions: {color: "#000000", turnPolicy: TURNPOLICY_MINORITY, blackOnWhite: false}
+                    placeholder: TRACED_SVG
+                    layout: CONSTRAINED
+                  )
                 }
               }
-              alt
+            }
+            alt
+          }
+        }
+        ... on PrismicProjectBodyText {
+          primary {
+            text {
+              html
             }
           }
-          ... on PrismicProjectBodyText {
-            primary {
-              text {
-                html
-              }
-            }
-          }
-          ... on PrismicProjectBodyVideo {
-            primary {
-              link {
-                html
-              }
+        }
+        ... on PrismicProjectBodyVideo {
+          primary {
+            link {
+              html
             }
           }
         }
       }
     }
   }
+}
 `
