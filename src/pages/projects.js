@@ -5,7 +5,8 @@ import Projects from '../components/projects'
 
 export default ({ data, location }) => (
     <Layout location={location}>
-        <Projects 
+        <Projects
+            location={location}
             data={data}
         />
     </Layout>
