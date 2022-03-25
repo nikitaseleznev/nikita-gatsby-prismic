@@ -5,7 +5,6 @@ import Layout from '../components/layout'
 const IndexPage = ({ data, location }) => (
     <Layout location={location}>
         <div className={s.container}>
-            {console.log(data)}
             <h2>About</h2>
             <p>Nikita Seleznev	born 1990, Perm—lives Tbilisi, Georgia (temporary)
             </p>

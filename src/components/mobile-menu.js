@@ -52,6 +52,7 @@ const MobileMenu = ({ items, location }) => {
                                 key={i}
                                 className={`${s.mobileItem} ${isCurrent && s.current}`}
                                 to={x.to}
+                                onClick={() => setMobileOpen(false)}
                             >
                                 {x.content}
                             </Link>
