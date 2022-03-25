@@ -44,6 +44,8 @@
   @media (max-width: 576px) {
     .videoForeground {
         width: calc(100vh * 2);
-        left: -107%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
     }
   }

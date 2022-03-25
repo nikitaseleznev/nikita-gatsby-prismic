@@ -27,7 +27,6 @@ body {
 
 .text-container {
   margin-bottom: 7.5rem;
-  padding: 0 12px;
 }
 
 .main {
@@ -48,8 +47,11 @@ body {
     margin: 30px auto;
 }
 
-h1 {
-  padding: 0 15px;
+h1, h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -63,11 +65,11 @@ a:hover {
 
 ul {
   list-style: none;
-  padding: 0 12px;
+  padding: 0;
 }
 
 li {
-  margin-bottom: 12px;
+    margin-bottom: 1rem;
 }
 
 .img {
