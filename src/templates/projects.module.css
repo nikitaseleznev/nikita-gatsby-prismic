@@ -1,0 +1,16 @@
+.topTop {
+    position: fixed;
+    bottom: 1rem;
+    right: calc(50vw - 360px - 2rem);
+    z-index: 1;
+
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .topTop {
+        display: none;
+    }
+}
