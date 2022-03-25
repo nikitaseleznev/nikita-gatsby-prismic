@@ -72,6 +72,11 @@ li {
     margin-bottom: 1rem;
 }
 
+hr {
+    border-color: transparent;
+    border-top-color: black;
+}
+
 .img {
   margin-bottom: 24px;
   max-height: 90vh; 

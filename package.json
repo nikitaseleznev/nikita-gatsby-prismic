@@ -21,6 +21,7 @@
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-helmet": "^5.2.0",
+    "react-instagram-zoom": "^1.0.1",
     "react-youtube": "^7.9.0",
     "sharp": "^0.27.2"
   },
@@ -29,7 +30,7 @@
     "build:favicons": "node scripts/favicons",
     "build:gatsby": "gatsby build",
     "build": "npm run build:gatsby",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "serve": "gatsby serve"
   },
   "repository": {

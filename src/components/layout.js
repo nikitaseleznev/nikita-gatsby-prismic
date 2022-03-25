@@ -30,7 +30,6 @@ const Layout = ({ children, location }) => (
                     </Link>
                 </li>
                 <div className={s.menu}>
-
                     {links.map((x, i) => {
                         const isCurrent = location.pathname === x.to
                             ? true
