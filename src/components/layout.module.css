@@ -1,0 +1,41 @@
+.home {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    position: relative;
+    z-index: 2;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.menu {
+    display: flex;
+    gap: 6rem;
+}
+
+
+.links {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.links li {
+    margin: 0;
+}
+
+@media (max-width: 576px) {
+    .menu {
+        display: none;
+    }
+}
