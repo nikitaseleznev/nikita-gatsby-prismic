@@ -23,23 +23,31 @@ const Layout = ({ children, location }) => (
     <>
         <Seo />
         <div className="main">
-            <ul className={s.links}>
+            <ul className={`${s.links} ${location.pathname === '/' && s.transeparent}`}>
                 <li>
                     <Link className={`header-link ${s.home}`} to="/">
                         NIKITA SELEZNEV
                     </Link>
                 </li>
                 <div className={s.menu}>
-                    {links.map((x, i) => (
-                        <li key={i}>
-                            <Link className={`${x.className} ${location.pathname.includes(x.to) && s.current}`} to={x.to}>
-                                {x.content}
-                            </Link>
-                        </li>
-                    ))}
+
+                    {links.map((x, i) => {
+                        const isCurrent = location.pathname === x.to
+                            ? true
+                            : (!['/', '/about',].includes(location.pathname) && x.to === '/projects')
+
+                        return (
+                            <li key={i}>
+                                <Link className={`${x.className} ${isCurrent && s.current}`} to={x.to}>
+                                    {x.content}
+                                </Link>
+                            </li>
+                        )
+                    })}
                 </div>
                 <MobileMenu
                     items={links}
+                    location={location}
                 />
             </ul>
             <div className="container">

@@ -1,8 +1,8 @@
 .home {
-    font-size: 19px;
+    font-size: 19px !important;
     font-weight: 700;
-    line-height: 22px;
-    letter-spacing: 0.05em;
+    line-height: 22px !important;
+    letter-spacing: 0.05em !important;
     position: relative;
     z-index: 2;
 }
@@ -15,7 +15,6 @@
     display: flex;
     gap: 6rem;
 }
-
 
 .links {
     position: sticky;
@@ -32,6 +31,10 @@
 }
 .links li {
     margin: 0;
+}
+
+.transeparent {
+    background-color: transparent;
 }
 
 @media (max-width: 576px) {

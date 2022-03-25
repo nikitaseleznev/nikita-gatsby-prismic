@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import s from './mobile-menu.module.css'
 import { Link } from 'gatsby';
 
-const MobileMenu = ({ items }) => {
+const MobileMenu = ({ items, location }) => {
     const [mobileOpen, setMobileOpen] = useState(false)
 
     useEffect(() => {
@@ -41,15 +41,22 @@ const MobileMenu = ({ items }) => {
                 }}
             >
                 <menu className={s.mobileMenu}>
-                    {items.map((x, i) => (
-                        <Link
-                            key={i}
-                            className={s.mobileItem}
-                            to={x.to}
-                        >
-                            {x.content}
-                        </Link>
-                    ))}
+                    {items.map((x, i) => {
+
+                        // kinds hack ):
+                        const isCurrent = location.pathname === x.to
+                            ? true
+                            : (!['/', '/about',].includes(location.pathname) && x.to === '/projects')
+                        return (
+                            <Link
+                                key={i}
+                                className={`${s.mobileItem} ${isCurrent && s.current}`}
+                                to={x.to}
+                            >
+                                {x.content}
+                            </Link>
+                        )
+                    })}
                 </menu>
             </div>
         </>
