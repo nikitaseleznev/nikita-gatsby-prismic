@@ -2,6 +2,9 @@ var plugins = [{
       plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
       plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
     },{

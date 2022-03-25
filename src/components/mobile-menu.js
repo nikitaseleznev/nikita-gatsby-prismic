@@ -43,6 +43,7 @@ const MobileMenu = ({ items }) => {
                 <menu className={s.mobileMenu}>
                     {items.map((x, i) => (
                         <Link
+                            key={i}
                             className={s.mobileItem}
                             to={x.to}
                         >
