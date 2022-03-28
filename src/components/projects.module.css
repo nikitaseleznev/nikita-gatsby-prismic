@@ -1,3 +1,33 @@
 .current {
     text-decoration: underline !important;
 }
+
+.container {
+    position: relative;
+}
+
+.previews {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    overflow: hidden;
+}
+.previews img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    transition: opacity .25s;
+}
+
+@media (max-width: 576px) {
+    .previews {
+        width: 75%;
+        padding-bottom: 133%;
+    }
+}

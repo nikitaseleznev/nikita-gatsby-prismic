@@ -19,7 +19,7 @@ const links = [
     },
 ]
 
-const Layout = ({ children, location }) => (
+const Layout = ({ children, location, mobileData }) => (
     <>
         <Seo />
         <div className="main">
@@ -47,6 +47,7 @@ const Layout = ({ children, location }) => (
                 <MobileMenu
                     items={links}
                     location={location}
+                    mobileData={mobileData}
                 />
             </ul>
             <div className="container">

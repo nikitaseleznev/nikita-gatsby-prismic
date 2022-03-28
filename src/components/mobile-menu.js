@@ -2,8 +2,9 @@ import { memo } from "react";
 import React, { useEffect, useState } from 'react'
 import s from './mobile-menu.module.css'
 import { Link } from 'gatsby';
+import Socials from "./socials";
 
-const MobileMenu = ({ items, location }) => {
+const MobileMenu = ({ items, location, mobileData }) => {
     const [mobileOpen, setMobileOpen] = useState(false)
 
     useEffect(() => {
@@ -59,6 +60,12 @@ const MobileMenu = ({ items, location }) => {
                         )
                     })}
                 </menu>
+
+                {mobileData && (
+                    <div className={s.links}>
+                        <Socials data={mobileData} />
+                    </div>
+                )}
             </div>
         </>
     )

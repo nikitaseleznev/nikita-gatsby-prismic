@@ -9,10 +9,11 @@
     cursor: pointer;
 }
 
-h1 {
+
+.container h1 {
     margin-bottom: 0;
 }
-h2 {
+.container h2 {
     margin-top: 0;
 }
 

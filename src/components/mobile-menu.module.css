@@ -52,6 +52,13 @@
     text-decoration: underline;
 }
 
+.links {
+    position: absolute;
+    bottom: 0;
+    padding: 0 10px;
+    padding-bottom: 1rem;
+}
+
 @media screen and (min-width: 576px) {
     .mobileButton {
         display: none;

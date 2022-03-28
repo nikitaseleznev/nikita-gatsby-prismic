@@ -4,7 +4,10 @@ import Layout from '../components/layout'
 import Projects from '../components/projects'
 
 export default ({ data, location }) => (
-    <Layout location={location}>
+    <Layout
+        location={location}
+        mobileData={data.prismicAbout.data}
+    >
         <Projects
             location={location}
             data={data}
@@ -22,9 +25,19 @@ export const pageQuery = graphql`
             title {
               text
             }
+            preview {
+              url
+            }
           }
         }
       }
-    }    
+    }
+    prismicAbout {
+        data {
+          cv {
+            url
+          }
+        }
+      } 
   }
 `

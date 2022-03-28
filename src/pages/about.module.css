@@ -5,3 +5,7 @@
 .container a {
     text-decoration: underline;
 }
+
+.container > h1 {
+    margin-bottom: 2rem;
+}

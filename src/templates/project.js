@@ -9,46 +9,52 @@ import Projects from '../components/projects'
 export default ({ data, location }) => {
     const project = data.project.data
     return (
-        <Layout location={location}>
-            <h1>{project.title.text}</h1>
-            <div>
-                {project.body.map((block, i) => (
-                    <div key={i}>
-                        {block.__typename === 'PrismicProjectBodyImageGallery' &&
-                            block.items.map((item, j) => (
-                                <Zoomable
-                                    key={`${j}-image-container`}
-                                    className="img"
-                                >
-                                    {item.image && item.image.localFile && (
-                                        <GatsbyImage
-                                            image={item.image.localFile.childImageSharp.gatsbyImageData}
-                                            key={`${j}-image`}
-                                            alt={item.alt}
-                                            imgStyle={{
-                                                objectFit: 'contain'
-                                            }}
-                                        />
-                                    )}
-                                </Zoomable>
-                            ))}
-                        {block.__typename === 'PrismicProjectBodyText' &&
-                            <div
-                                key={`${i}-text`}
-                                className={s.textContainer}
-                                dangerouslySetInnerHTML={{ __html: block.primary.text.html }}
-                            />
-                        }
-                        {block.__typename === 'PrismicProjectBodyVideo' &&
-                            <div
-                                key={`${i}-text`}
-                                className="video"
-                                dangerouslySetInnerHTML={{ __html: block.primary.link.html }}
-                            />
-                        }
-                    </div>
-                ))}
+        <Layout
+            location={location}
+            mobileData={data.prismicAbout.data}
+        >
+            <div className={s.container}>
+                <h1>{project.title.text}</h1>
+                <div>
+                    {project.body.map((block, i) => (
+                        <div key={i}>
+                            {block.__typename === 'PrismicProjectBodyImageGallery' &&
+                                block.items.map((item, j) => (
+                                    <Zoomable
+                                        key={`${j}-image-container`}
+                                        className="img"
+                                    >
+                                        {item.image && item.image.localFile && (
+                                            <GatsbyImage
+                                                image={item.image.localFile.childImageSharp.gatsbyImageData}
+                                                key={`${j}-image`}
+                                                alt={item.alt}
+                                                imgStyle={{
+                                                    objectFit: 'contain'
+                                                }}
+                                            />
+                                        )}
+                                    </Zoomable>
+                                ))}
+                            {block.__typename === 'PrismicProjectBodyText' &&
+                                <div
+                                    key={`${i}-text`}
+                                    className={s.textContainer}
+                                    dangerouslySetInnerHTML={{ __html: block.primary.text.html }}
+                                />
+                            }
+                            {block.__typename === 'PrismicProjectBodyVideo' &&
+                                <div
+                                    key={`${i}-text`}
+                                    className="video"
+                                    dangerouslySetInnerHTML={{ __html: block.primary.link.html }}
+                                />
+                            }
+                        </div>
+                    ))}
+                </div>
             </div>
+
             <button
                 className={s.topTop}
                 onClick={() => {
@@ -132,5 +138,12 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
         }
       }
     }
+    prismicAbout {
+        data {
+          cv {
+            url
+          }
+        }
+      } 
 }
 `
