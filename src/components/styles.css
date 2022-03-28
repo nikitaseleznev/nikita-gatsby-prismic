@@ -25,10 +25,6 @@ body {
     text-transform: capitalize;
 }
 
-.text-container {
-  margin-bottom: 7.5rem;
-}
-
 .main {
   position: relative;
   padding: 24px;
@@ -78,7 +74,7 @@ hr {
 }
 
 .img {
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   max-height: 90vh; 
   position: relative;
   width: 100%;

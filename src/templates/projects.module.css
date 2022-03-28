@@ -9,6 +9,22 @@
     cursor: pointer;
 }
 
+h1 {
+    margin-bottom: 0;
+}
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.textContainer {
+    margin-bottom: 40px;
+}
+
+
 @media (max-width: 576px) {
     .topTop {
         display: none;
