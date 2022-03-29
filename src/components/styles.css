@@ -96,6 +96,10 @@ img {
 }
 
 @media (max-width: 576px) {
+    body {
+        overflow-x: clip;
+    }
+    
     .main {
         padding: 0 10px;
     }
