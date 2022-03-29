@@ -18,7 +18,7 @@ const Projects = ({ data, location }) => {
                         <li key={node.uid}>
                             <Link
                                 to={`/${node.uid}`}
-                                className={location.pathname === `/${node.uid}` && s.current}
+                                className={location.pathname === `/${node.uid}` ? s.current : undefined}
                                 onPointerEnter={() => setPreview(node.data.preview.url)}
                                 onPointerLeave={() => setPreview(null)}
                             >
@@ -32,6 +32,7 @@ const Projects = ({ data, location }) => {
                         <img
                             key={i}
                             src={node.data.preview.url}
+                            alt=''
                             style={{
                                 opacity: preview === node.data.preview.url ? 1 : 0,
                                 zIndex: i,

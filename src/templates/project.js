@@ -28,7 +28,7 @@ export default ({ data, location }) => {
                                             <GatsbyImage
                                                 image={item.image.localFile.childImageSharp.gatsbyImageData}
                                                 key={`${j}-image`}
-                                                alt={item.alt}
+                                                alt={item.alt ?? ''}
                                                 imgStyle={{
                                                     objectFit: 'contain'
                                                 }}
