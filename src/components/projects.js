@@ -1,9 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'gatsby'
 import s from './projects.module.css'
 
 const Projects = ({ data, location }) => {
     const [preview, setPreview] = useState(null)
+
+    useEffect(() => {
+        document.body.scrollTo(0, 0)
+    }, [location.pathname])
+
     return (
         <>
             <h1>Projects</h1>
@@ -13,7 +18,7 @@ const Projects = ({ data, location }) => {
                         <li key={node.uid}>
                             <Link
                                 to={`/${node.uid}`}
-                                className={location.pathname.includes(`/${node.uid}`) && s.current}
+                                className={location.pathname === `/${node.uid}` && s.current}
                                 onPointerEnter={() => setPreview(node.data.preview.url)}
                                 onPointerLeave={() => setPreview(null)}
                             >
@@ -25,6 +30,7 @@ const Projects = ({ data, location }) => {
                 <div className={s.previews}>
                     {data.projects.edges.map(({ node }, i) => !node.data.preview?.url ? null : (
                         <img
+                            key={i}
                             src={node.data.preview.url}
                             style={{
                                 opacity: preview === node.data.preview.url ? 1 : 0,
