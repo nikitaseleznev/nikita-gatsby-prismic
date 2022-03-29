@@ -45,10 +45,17 @@ export default ({ data, location }) => {
                             }
                             {block.__typename === 'PrismicProjectBodyVideo' &&
                                 <div
-                                    key={`${i}-text`}
+                                    key={`${i}-video`}
                                     className="video"
-                                    dangerouslySetInnerHTML={{ __html: block.primary.link.html }}
-                                />
+                                >
+                                    <iframe
+                                        title='youtube embed'
+                                        src={`${block.primary.link.embed_url.split('youtu.be/').join('youtube.com/embed/')}/?feature=oembed&rel=0`}
+                                        frameBorder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                        allowFullScreen
+                                    />
+                                </div>
                             }
                         </div>
                     ))}
@@ -119,7 +126,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
         ... on PrismicProjectBodyVideo {
           primary {
             link {
-              html
+              embed_url
             }
           }
         }
@@ -133,6 +140,9 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
           data {
             title {
               text
+            }
+            preview {
+              url
             }
           }
         }
