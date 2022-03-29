@@ -11,9 +11,9 @@
     z-index: -1;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 60%;
     height: 0;
-    padding-bottom: 50%;
+    padding-bottom: 60%;
     overflow: hidden;
 }
 .previews img {
