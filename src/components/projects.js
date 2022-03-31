@@ -4,11 +4,6 @@ import s from './projects.module.css'
 
 const Projects = ({ data, location }) => {
     const [preview, setPreview] = useState(null)
-
-    useEffect(() => {
-        document.body.scrollTo(0, 0)
-    }, [location.pathname])
-
     return (
         <>
             <h1>Projects</h1>

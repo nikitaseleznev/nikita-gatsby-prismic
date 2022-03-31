@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
@@ -7,7 +7,12 @@ import Zoomable from "react-instagram-zoom"
 import Projects from '../components/projects'
 
 export default ({ data, location }) => {
+    useEffect(() => {
+        document.body.scrollTo(0, 0)
+    }, [location.pathname])
+
     const project = data.project.data
+
     return (
         <Layout
             location={location}
