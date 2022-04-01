@@ -1,0 +1,37 @@
+.topTop {
+    position: fixed;
+    bottom: 1rem;
+    right: calc(50vw - 360px - 2rem);
+    z-index: 1;
+
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.container h1 {
+    margin-bottom: 0;
+}
+.container h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.textContainer {
+    margin-bottom: 40px;
+}
+
+.textContainer > p {
+    margin-bottom: 1rem;
+}
+
+
+@media (max-width: 576px) {
+    .topTop {
+        display: none;
+    }
+}

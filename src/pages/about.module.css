@@ -1,0 +1,15 @@
+.container hr {
+    margin: 2rem 0;
+}
+
+.container a {
+    text-decoration: underline;
+}
+
+.container > p {
+    margin-bottom: 1rem;
+}
+
+.container > h1 {
+    margin-bottom: 2rem;
+}

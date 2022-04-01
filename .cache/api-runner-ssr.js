@@ -1,5 +1,17 @@
 var plugins = [{
-      plugin: require('/Users/alexeiaccio/Github/nikita-gatsby-prismic/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-image/gatsby-ssr'),
+      options: {"plugins":[]},
+    },{
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+    },{
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Nikita Seleznev","short_name":"Nikita Seleznev","start_url":"/","theme_color":"#000000","background_color":"#000000","display":"minimal-ui","icon":"static/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"8de0f0602a2ae93d0fca362fa69af2f0"},
+    },{
+      plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

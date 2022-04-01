@@ -1,16 +1,55 @@
-.container {
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow-x: hidden;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.03em;
+}
+body::-webkit-scrollbar:horizontal {
+    display: none;
+}
+
+.header-link {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+}
+
+.main {
+  position: relative;
+  padding: 24px;
   width: 100%;
   max-width: 720px;
-  margin: 30px auto;
+  margin: 0 auto;
+}
+.white {
+  background: white;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
+
+.container {
+    width: 100%;
+    max-width: 720px;
+    margin: 30px auto;
 }
 
-h1 {
-  padding: 0 15px;
+h1, h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0.05em;
 }
 
 a {
@@ -24,15 +63,21 @@ a:hover {
 
 ul {
   list-style: none;
-  padding: 0 12px;
+  padding: 0;
 }
 
 li {
-  margin-bottom: 12px;
+    margin-bottom: 1rem;
+}
+
+hr {
+    border-color: transparent;
+    border-top-color: black;
 }
 
 .img {
-  margin-bottom: 24px;
+  display: block;
+  margin-bottom: 16px;
   max-height: 90vh; 
   position: relative;
   width: 100%;
@@ -42,82 +87,33 @@ li {
   position: initial !important;
 }
 
+.video {
+  margin-bottom: 16px;
+}
 .video > iframe {
   width: 100%;
   height: 400px;
 }
 
-.links {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  box-sizing: border-box;
+/* custom prismic styles for richtext */
+
+.footnote {
+    vertical-align: sub;
+    font-size: .8rem;
 }
 
-@media (min-width: 576px) {
-  .links {
-    flex-direction: row;
-  }
+.align-right {
+    display: block;
+    text-align: end;
 }
 
-.header-link {
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.text-container {
-  margin-bottom: 7.5rem;
-  padding: 0 12px;
-}
-
-.main {
-  position: relative;
-  padding: 24px;
-  width: 100%;
-  max-width: 720px;
-  margin: 0 auto;
-}
-.white {
-  background: white;
-}
-.video-background {
-  background: black;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  z-index: -99;
-}
-.video-background::after {
-  display: block;
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-}
-.video-foreground,
-.video-wrapper,
-.video-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .video-foreground { height: 300%; top: -100%; }
-}
-@media (max-aspect-ratio: 16/9) {
-  .video-foreground { width: 300%; left: -100%; }
-}
-
-.video-wrapper {
-  transition: opacity 400ms ease-in-out 600ms;
+@media (max-width: 576px) {
+    body {
+        overflow-x: clip;
+    }
+    
+    .main {
+        padding: 0 10px;
+        padding-bottom: 3rem;
+    }
 }
