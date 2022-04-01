@@ -44,7 +44,7 @@ const MobileMenu = ({ items, location, mobileData }) => {
                 <menu className={s.mobileMenu}>
                     {items.map((x, i) => {
 
-                        // kinds hack ):
+                        // kinda hack ):
                         const isCurrent = location.pathname === x.to
                             ? true
                             : (!['/', '/about',].includes(location.pathname) && x.to === '/projects')
