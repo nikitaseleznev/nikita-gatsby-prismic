@@ -6,7 +6,10 @@ import Socials from '../components/socials'
 const IndexPage = ({ data, location }) => {
     const content = data.prismicAbout.data
     return (
-        <Layout location={location}>
+        <Layout
+            location={location}
+            mobileData={content}
+        >
             <div className={s.container}>
                 <h1>{content.title.text}</h1>
                 <div
