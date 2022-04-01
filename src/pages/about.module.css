@@ -6,6 +6,10 @@
     text-decoration: underline;
 }
 
+.container > p {
+    margin-bottom: 1rem;
+}
+
 .container > h1 {
     margin-bottom: 2rem;
 }

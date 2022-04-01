@@ -43,6 +43,7 @@ class Video extends PureComponent {
                     >
                         <img
                             src='/images/videoplaceholder.jpg'
+                            alt=''
                         />
                         <YouTube
                             videoId="u9MoR4xDOv4"

@@ -25,6 +25,10 @@ p {
     margin-bottom: 40px;
 }
 
+.textContainer > p {
+    margin-bottom: 1rem;
+}
+
 
 @media (max-width: 576px) {
     .topTop {
