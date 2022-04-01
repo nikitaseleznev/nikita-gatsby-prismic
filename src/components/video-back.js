@@ -41,6 +41,9 @@ class Video extends PureComponent {
                         className={s.videoWrapper}
                         style={{ opacity: this.state.isPlay ? 1 : 0 }}
                     >
+                        <img
+                            src='/images/videoplaceholder.jpg'
+                        />
                         <YouTube
                             videoId="u9MoR4xDOv4"
                             opts={opts}
