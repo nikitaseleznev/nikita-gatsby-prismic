@@ -95,6 +95,18 @@ img {
   height: 400px;
 }
 
+/* custom prismic styles for richtext */
+
+.footnote {
+    vertical-align: sub;
+    font-size: .8rem;
+}
+
+.align-right {
+    display: block;
+    text-align: end;
+}
+
 @media (max-width: 576px) {
     body {
         overflow-x: clip;
