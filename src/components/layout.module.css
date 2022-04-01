@@ -16,6 +16,10 @@
     gap: 6rem;
 }
 
+.menu li {
+    font-weight: bold;
+}
+
 .links {
     position: sticky;
     top: 0;
