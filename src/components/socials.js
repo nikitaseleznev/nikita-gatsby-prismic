@@ -13,7 +13,7 @@ const Socials = ({ data }) => {
             </a>
             &nbsp;&#47;&#47;&nbsp;
             <a
-                href={data.press?.url ?? data.cv?.url}
+                href={data.press?.url}
                 target={'_blank'}
                 rel='noreferrer'
             >
