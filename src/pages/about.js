@@ -41,6 +41,9 @@ query AboutQuerry {
         cv {
           url
         }
+        press {
+          url
+        }
       }
     }
   }  

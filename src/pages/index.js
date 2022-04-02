@@ -21,6 +21,9 @@ query MobileMenuQuerry {
         cv {
           url
         }
+        press {
+          url
+        }
       }
     }
   }

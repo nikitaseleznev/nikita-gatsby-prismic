@@ -37,6 +37,9 @@ export const pageQuery = graphql`
           cv {
             url
           }
+          press {
+            url
+          }
         }
       } 
   }
