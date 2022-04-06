@@ -1,49 +1,51 @@
 // This does not support nested pages (level 2 and up)
 // If you're working with deeply nested pages, remove this or rework it.
 
-export default ({
-  pathname,
-  canonical,
-  siteUrl,
-  siteTitle,
-  pageTitleFull,
+const generator = ({
+    pathname,
+    canonical,
+    siteUrl,
+    siteTitle,
+    pageTitleFull,
 }) => {
-  const isSubPage = pathname !== '/'
+    const isSubPage = pathname !== '/'
 
-  const schema = [
-    {
-      '@context': 'http://schema.org',
-      '@type': 'WebSite',
-      url: canonical,
-      name: siteTitle,
-      alternateName: pageTitleFull,
-    },
-  ]
-
-  if (isSubPage) {
-    schema.push({
-      '@context': 'http://schema.org',
-      '@type': 'BreadcrumbList',
-      itemListElement: [
+    const schema = [
         {
-          '@type': 'ListItem',
-          position: 1,
-          item: {
-            '@id': siteUrl,
+            '@context': 'http://schema.org',
+            '@type': 'WebSite',
+            url: canonical,
             name: siteTitle,
-          },
+            alternateName: pageTitleFull,
         },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          item: {
-            '@id': canonical,
-            name: pageTitleFull,
-          },
-        },
-      ],
-    })
-  }
+    ]
 
-  return schema
+    if (isSubPage) {
+        schema.push({
+            '@context': 'http://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+                {
+                    '@type': 'ListItem',
+                    position: 1,
+                    item: {
+                        '@id': siteUrl,
+                        name: siteTitle,
+                    },
+                },
+                {
+                    '@type': 'ListItem',
+                    position: 2,
+                    item: {
+                        '@id': canonical,
+                        name: pageTitleFull,
+                    },
+                },
+            ],
+        })
+    }
+
+    return schema
 }
+
+export default generator
