@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
-import s from './projects.module.css'
+import * as s from './projects.module.css'
 import Zoomable from "react-instagram-zoom"
 import Projects from '../components/projects'
 
-export default ({ data, location }) => {
+const ProjectsTemplate = ({ data, location }) => {
     useEffect(() => {
         document.body.scrollTo(0, 0)
     }, [location.pathname])
@@ -101,6 +101,8 @@ export default ({ data, location }) => {
         </Layout>
     );
 }
+
+export default ProjectsTemplate
 
 export const pageQuery = graphql`query ProjectQuery($uid: String!) {
   project: prismicProject(uid: {eq: $uid}) {

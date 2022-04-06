@@ -2,7 +2,7 @@ import React, { memo } from 'react';
 import { Link } from 'gatsby';
 import Seo from './seo'
 import MobileMenu from './mobile-menu'
-import s from './layout.module.css'
+import * as s from './layout.module.css'
 
 import './styles.css';
 

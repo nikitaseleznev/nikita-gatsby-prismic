@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
-import s from './projects.module.css'
+import * as s from './projects.module.css'
 
 const Projects = ({ data, location }) => {
     const [preview, setPreview] = useState(null)
@@ -8,7 +8,7 @@ const Projects = ({ data, location }) => {
         <>
             <h1>Projects</h1>
             <div className={s.container}>
-                <ul className={s.ul}>
+                <ul>
                     {data.projects.edges.map(({ node }, i) => (
                         <li key={node.uid}>
                             <Link

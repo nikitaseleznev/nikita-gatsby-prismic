@@ -1,5 +1,5 @@
 import React from 'react'
-import s from './socials.module.css'
+import * as s from './socials.module.css'
 
 const Socials = ({ data }) => {
     return (

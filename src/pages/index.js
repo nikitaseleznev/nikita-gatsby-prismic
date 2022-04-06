@@ -1,6 +1,6 @@
 import React from 'react'
-import Video from '../components/video-back';
-
+import Video from '../components/video-back'
+import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 
 const IndexPage = ({ data, location }) => (

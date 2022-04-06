@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import YouTube from 'react-youtube';
-import s from './video-back.module.css'
+import * as s from './video-back.module.css'
 
 class Video extends PureComponent {
     constructor() {
