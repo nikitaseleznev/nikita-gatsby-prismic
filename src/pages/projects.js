@@ -30,6 +30,9 @@ export const pageQuery = graphql`
             preview {
               url
             }
+            description {
+              html
+            }
           }
         }
       }

@@ -24,15 +24,28 @@ const Projects = ({ data, location }) => {
                 </ul>
                 <div className={s.previews}>
                     {data.projects.edges.map(({ node }, i) => !node.data.preview?.url ? null : (
-                        <img
+                        <div
                             key={i}
-                            src={node.data.preview.url}
-                            alt=''
+                            className={s.previewContainer}
                             style={{
                                 opacity: preview === node.data.preview.url ? 1 : 0,
                                 zIndex: i,
                             }}
-                        />
+                        >
+                            <img
+                                src={node.data.preview.url}
+                                alt=''
+                            />
+                            <div
+                                className={s.description}
+                                style={{
+                                    display: !node.data.description.html && 'none',
+                                }}
+                                dangerouslySetInnerHTML={{
+                                    __html: node.data.description.html,
+                                }}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>

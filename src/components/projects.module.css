@@ -16,18 +16,46 @@
     padding-bottom: 60%;
     overflow: hidden;
 }
-.previews img {
+
+.previewContainer {
     position: absolute;
     width: 100%;
     height: 100%;
-    object-fit: cover;
 
     transition: opacity .25s;
+}
+
+.previews img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description {
+    position: relative;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    padding: 1rem;
+
+    color: white;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .33);
+
+    transform: translateY(-100%);
+}
+.description > * {
+    margin-top: unset;
 }
 
 @media (max-width: 576px) {
     .previews {
         width: 75%;
         padding-bottom: 133%;
+    }
+
+    .description {
+        display: none;
     }
 }
