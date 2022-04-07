@@ -23,7 +23,7 @@ const ProjectsTemplate = ({ data, location }) => {
                 <div>
                     {project.body.map((block, i) => (
                         <div key={i}>
-                            {block.__typename === 'PrismicProjectBodyImageGallery' &&
+                            {block.__typename === 'PrismicProjectDataBodyImageGallery' &&
                                 block.items.map((item, j) => (
                                     <Zoomable
                                         key={`${j}-image-container`}
@@ -41,14 +41,14 @@ const ProjectsTemplate = ({ data, location }) => {
                                         )}
                                     </Zoomable>
                                 ))}
-                            {block.__typename === 'PrismicProjectBodyText' &&
+                            {block.__typename === 'PrismicProjectDataBodyText' &&
                                 <div
                                     key={`${i}-text`}
                                     className={s.textContainer}
                                     dangerouslySetInnerHTML={{ __html: block.primary.text.html }}
                                 />
                             }
-                            {block.__typename === 'PrismicProjectBodyVideo' &&
+                            {block.__typename === 'PrismicProjectDataBodyVideo' &&
                                 <div
                                     key={`${i}-video`}
                                     className="video"
@@ -112,7 +112,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
       }
       body {
         __typename
-        ... on PrismicProjectBodyImageGallery {
+        ... on PrismicProjectDataBodyImageGallery {
           items {
             image {
               url
@@ -131,14 +131,14 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
             alt
           }
         }
-        ... on PrismicProjectBodyText {
+        ... on PrismicProjectDataBodyText {
           primary {
             text {
               html
             }
           }
         }
-        ... on PrismicProjectBodyVideo {
+        ... on PrismicProjectDataBodyVideo {
           primary {
             link {
               html

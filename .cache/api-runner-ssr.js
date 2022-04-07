@@ -9,7 +9,7 @@ var plugins = [{
     },{
       name: 'gatsby-plugin-sitemap',
       plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
-      options: {"plugins":[],"output":"/sitemap.xml","createLinkInHead":true},
+      options: {"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},
     },{
       name: 'gatsby-plugin-manifest',
       plugin: require('C:/Users/чел/Desktop/projects/nikita-gatsby-prismic/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
