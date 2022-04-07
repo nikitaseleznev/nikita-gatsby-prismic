@@ -158,6 +158,9 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
             preview {
               url
             }
+            description {
+              html
+            }
           }
         }
       }
