@@ -1,6 +1,6 @@
 import { memo } from "react";
 import React, { useEffect, useState } from 'react'
-import s from './mobile-menu.module.css'
+import * as s from './mobile-menu.module.css'
 import { Link } from 'gatsby';
 import Socials from "./socials";
 

@@ -51,11 +51,6 @@
 
 @media (max-width: 576px) {
     .previews {
-        width: 75%;
-        padding-bottom: 133%;
-    }
-
-    .description {
         display: none;
     }
 }

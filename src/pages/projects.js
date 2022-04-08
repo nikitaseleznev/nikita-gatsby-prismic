@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import Projects from '../components/projects'
 
-export default ({ data, location }) => (
+const ProjectsPage = ({ data, location }) => (
     <Layout
         location={location}
         mobileData={data.prismicAbout.data}
@@ -14,6 +14,8 @@ export default ({ data, location }) => (
         />
     </Layout>
 )
+
+export default ProjectsPage
 
 export const pageQuery = graphql`
   query ProjectsQuery {

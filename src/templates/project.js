@@ -2,11 +2,11 @@ import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from '../components/layout'
-import s from './projects.module.css'
+import * as s from './projects.module.css'
 import Zoomable from "react-instagram-zoom"
 import Projects from '../components/projects'
 
-export default ({ data, location }) => {
+const ProjectsTemplate = ({ data, location }) => {
     useEffect(() => {
         document.body.scrollTo(0, 0)
     }, [location.pathname])
@@ -23,7 +23,7 @@ export default ({ data, location }) => {
                 <div>
                     {project.body.map((block, i) => (
                         <div key={i}>
-                            {block.__typename === 'PrismicProjectBodyImageGallery' &&
+                            {block.__typename === 'PrismicProjectDataBodyImageGallery' &&
                                 block.items.map((item, j) => (
                                     <Zoomable
                                         key={`${j}-image-container`}
@@ -41,14 +41,14 @@ export default ({ data, location }) => {
                                         )}
                                     </Zoomable>
                                 ))}
-                            {block.__typename === 'PrismicProjectBodyText' &&
+                            {block.__typename === 'PrismicProjectDataBodyText' &&
                                 <div
                                     key={`${i}-text`}
                                     className={s.textContainer}
                                     dangerouslySetInnerHTML={{ __html: block.primary.text.html }}
                                 />
                             }
-                            {block.__typename === 'PrismicProjectBodyVideo' &&
+                            {block.__typename === 'PrismicProjectDataBodyVideo' &&
                                 <div
                                     key={`${i}-video`}
                                     className="video"
@@ -102,6 +102,8 @@ export default ({ data, location }) => {
     );
 }
 
+export default ProjectsTemplate
+
 export const pageQuery = graphql`query ProjectQuery($uid: String!) {
   project: prismicProject(uid: {eq: $uid}) {
     data {
@@ -110,7 +112,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
       }
       body {
         __typename
-        ... on PrismicProjectBodyImageGallery {
+        ... on PrismicProjectDataBodyImageGallery {
           items {
             image {
               url
@@ -129,14 +131,14 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
             alt
           }
         }
-        ... on PrismicProjectBodyText {
+        ... on PrismicProjectDataBodyText {
           primary {
             text {
               html
             }
           }
         }
-        ... on PrismicProjectBodyVideo {
+        ... on PrismicProjectDataBodyVideo {
           primary {
             link {
               html
