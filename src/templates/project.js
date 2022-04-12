@@ -29,10 +29,9 @@ const ProjectsTemplate = ({ data, location }) => {
                                         key={`${j}-image-container`}
                                         className="img"
                                     >
-                                        {item.image && (
+                                        {item.image && item.image.localFile && (
                                             <GatsbyImage
-                                                // image={item.image.localFile.childImageSharp.gatsbyImageData}
-                                                image={item.image.gatsbyImageData}
+                                                image={item.image.localFile.childImageSharp.gatsbyImageData}
                                                 key={`${j}-image`}
                                                 alt={item.alt ?? ''}
                                                 imgStyle={{
@@ -117,7 +116,17 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
           items {
             image {
               url
-              gatsbyImageData(width: 720, placeholder: BLURRED, layout: CONSTRAINED)
+              localFile {
+                childImageSharp {
+                  gatsbyImageData(
+                    width: 720
+                    quality: 80
+                    tracedSVGOptions: {color: "#000000", turnPolicy: TURNPOLICY_MINORITY, blackOnWhite: false}
+                    placeholder: TRACED_SVG
+                    layout: CONSTRAINED
+                  )
+                }
+              }
             }
             alt
           }
