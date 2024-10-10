@@ -43,6 +43,12 @@ module.exports = {
         `gatsby-plugin-sharp`,
         'gatsby-plugin-image',
         {
+            resolve: 'gatsby-plugin-image',
+            options: {
+                formats: ['auto'],
+            },
+        },
+        {
             resolve: 'gatsby-source-prismic',
             options: {
                 repositoryName: 'nikita-seleznev',
