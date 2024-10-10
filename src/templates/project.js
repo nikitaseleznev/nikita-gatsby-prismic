@@ -38,6 +38,7 @@ const ProjectsTemplate = ({ data, location }) => {
                                                     objectFit: 'contain'
                                                 }}
                                                 loading='eager'
+                                                decoding='sync'
                                             />
                                         )}
                                     </Zoomable>
