@@ -30,11 +30,22 @@ const ProjectsTemplate = ({ data, location }) => {
                                         className="img"
                                     >
                                         {item.image && item.image.localFile && (
-                                            <GatsbyImage
-                                                image={item.image.localFile.childImageSharp.gatsbyImageData}
+                                            // <GatsbyImage
+                                            //     image={item.image.localFile.childImageSharp.gatsbyImageData}
+                                            //     key={`${j}-image`}
+                                            //     alt={item.alt ?? ''}
+                                            //     imgStyle={{
+                                            //         objectFit: 'contain'
+                                            //     }}
+                                            //     loading='eager'
+                                            //     decoding='sync'
+                                            //     formats={['auto']}
+                                            // />
+                                            <img
+                                                src={item.image.localFile.childImageSharp.gatsbyImageData.images.fallback.src}
                                                 key={`${j}-image`}
                                                 alt={item.alt ?? ''}
-                                                imgStyle={{
+                                                style={{
                                                     objectFit: 'contain'
                                                 }}
                                                 loading='eager'
