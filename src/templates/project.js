@@ -34,6 +34,7 @@ const ProjectsTemplate = ({ data, location }) => {
                                                 image={item.image.localFile.childImageSharp.gatsbyImageData}
                                                 key={`${j}-image`}
                                                 alt={item.alt ?? ''}
+                                                decoding='sync'
                                                 imgStyle={{
                                                     objectFit: 'contain'
                                                 }}
