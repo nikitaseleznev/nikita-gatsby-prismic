@@ -9,6 +9,11 @@ import Projects from '../components/projects'
 const ProjectsTemplate = ({ data, location }) => {
     useEffect(() => {
         document.body.scrollTo(0, 0)
+
+        const images = document.querySelectorAll('.uncontrollableImg')
+        images.forEach(image => {
+            image.setAttribute('decoding', 'sync')
+        })
     }, [location.pathname])
 
     const project = data.project.data
@@ -33,13 +38,14 @@ const ProjectsTemplate = ({ data, location }) => {
                                             <GatsbyImage
                                                 image={item.image.localFile.childImageSharp.gatsbyImageData}
                                                 key={`${j}-image`}
+                                                className='uncontrollableImg'
                                                 alt={item.alt ?? ''}
                                                 imgStyle={{
                                                     objectFit: 'contain'
                                                 }}
                                                 loading='eager'
                                                 decoding='sync'
-                                                formats={['auto', 'jpeg', 'png', 'avif']}
+                                                formats={['jpeg', 'png', 'avif']}
                                             />
                                         )}
                                     </Zoomable>
