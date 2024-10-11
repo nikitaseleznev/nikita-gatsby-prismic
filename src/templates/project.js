@@ -6,17 +6,6 @@ import * as s from './projects.module.css'
 import Zoomable from "react-instagram-zoom"
 import Projects from '../components/projects'
 
-// hack to set decoding on GatsbyImage
-const TheHack = () => {
-    useEffect(() => {
-        const images = document.querySelectorAll('.uncontrollableImg img')
-        images.forEach(image => {
-            image.setAttribute('decoding', 'sync')
-        })
-    }, [])
-    return null
-}
-
 const ProjectsTemplate = ({ data, location }) => {
     useEffect(() => {
         document.body.scrollTo(0, 0)
@@ -56,7 +45,6 @@ const ProjectsTemplate = ({ data, location }) => {
                                         )}
                                     </Zoomable>
                                 ))}
-                            <TheHack />
                             {block.__typename === 'PrismicProjectDataBodyText' &&
                                 <div
                                     key={`${i}-text`}
@@ -140,6 +128,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
                     tracedSVGOptions: {color: "#000000", turnPolicy: TURNPOLICY_MINORITY, blackOnWhite: false}
                     placeholder: TRACED_SVG
                     layout: CONSTRAINED
+                    formats: [JPEG, PNG, AVIF]
                   )
                 }
               }
