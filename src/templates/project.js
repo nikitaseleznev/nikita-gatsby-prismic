@@ -40,7 +40,7 @@ const ProjectsTemplate = ({ data, location }) => {
                                                 }}
                                                 loading='eager'
                                                 decoding='sync'
-                                                formats={['jpeg', 'png', 'avif']}
+                                                formats={['jpg', 'png', 'avif']}
                                             />
                                         )}
                                     </Zoomable>
@@ -128,7 +128,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
                     tracedSVGOptions: {color: "#000000", turnPolicy: TURNPOLICY_MINORITY, blackOnWhite: false}
                     placeholder: TRACED_SVG
                     layout: CONSTRAINED
-                    formats: [JPEG, PNG, AVIF]
+                    formats: [JPG, PNG, AVIF]
                   )
                 }
               }
