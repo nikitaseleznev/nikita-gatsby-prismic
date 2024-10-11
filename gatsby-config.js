@@ -41,12 +41,13 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
-        'gatsby-plugin-image',
         {
             resolve: 'gatsby-plugin-image',
             options: {
-                formats: ['auto'],
-            },
+                default: {
+                    formats: ['jpg', 'png', 'avif'],
+                }
+            }
         },
         {
             resolve: 'gatsby-source-prismic',

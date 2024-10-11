@@ -33,12 +33,14 @@ const ProjectsTemplate = ({ data, location }) => {
                                             <GatsbyImage
                                                 image={item.image.localFile.childImageSharp.gatsbyImageData}
                                                 key={`${j}-image`}
+                                                className='uncontrollableImg'
                                                 alt={item.alt ?? ''}
                                                 imgStyle={{
                                                     objectFit: 'contain'
                                                 }}
                                                 loading='eager'
                                                 decoding='sync'
+                                                formats={['jpg', 'png', 'avif']}
                                             />
                                         )}
                                     </Zoomable>
@@ -126,6 +128,7 @@ export const pageQuery = graphql`query ProjectQuery($uid: String!) {
                     tracedSVGOptions: {color: "#000000", turnPolicy: TURNPOLICY_MINORITY, blackOnWhite: false}
                     placeholder: TRACED_SVG
                     layout: CONSTRAINED
+                    formats: [JPG, PNG, AVIF]
                   )
                 }
               }
