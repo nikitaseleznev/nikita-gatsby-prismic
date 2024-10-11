@@ -6,14 +6,20 @@ import * as s from './projects.module.css'
 import Zoomable from "react-instagram-zoom"
 import Projects from '../components/projects'
 
-const ProjectsTemplate = ({ data, location }) => {
+// hack to set decoding on GatsbyImage
+const TheHack = () => {
     useEffect(() => {
-        document.body.scrollTo(0, 0)
-
-        const images = document.querySelectorAll('.uncontrollableImg')
+        const images = document.querySelectorAll('.uncontrollableImg img')
         images.forEach(image => {
             image.setAttribute('decoding', 'sync')
         })
+    }, [])
+    return null
+}
+
+const ProjectsTemplate = ({ data, location }) => {
+    useEffect(() => {
+        document.body.scrollTo(0, 0)
     }, [location.pathname])
 
     const project = data.project.data
@@ -50,6 +56,7 @@ const ProjectsTemplate = ({ data, location }) => {
                                         )}
                                     </Zoomable>
                                 ))}
+                            <TheHack />
                             {block.__typename === 'PrismicProjectDataBodyText' &&
                                 <div
                                     key={`${i}-text`}
